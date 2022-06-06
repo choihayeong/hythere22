@@ -105,7 +105,7 @@
                             <td>
                                 <!-- <a target="_blank" href="#">work list</a> -->
                                 <a target="_blank" href="https://news.pulmuone.co.kr/pulmuone/newsroom/listEsgMain.do">official site</a>
-                                <a target="_blank" href="/work/pulmuone/newsroom/esg/">site</a>
+                                <a target="_blank" href="/work/pulmuone/newsroom/esg/">work</a>
                             </td>
                         </tr>
                         <tr>
@@ -176,7 +176,7 @@
                             </td>
                             <td>
                                 <a target="_blank" href="https://www.yuyuteijin.co.kr/">official site</a>
-                                <a target="_blank" href="#">work</a>
+                                <!-- <a target="_blank" href="#">work</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -189,7 +189,7 @@
                             </td>
                             <td>
                                 <a target="_blank" href="https://www.bluecoveinvestment.com/">official site</a>
-                                <a target="_blank" href="#">work</a>
+                                <!-- <a target="_blank" href="#">work</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -202,9 +202,7 @@
                                 * 마끼다 - 이메일 뉴스레터 코딩 1건 <br>
                                 * 이연제약 - 팝업 추가(오늘하루 보지 않기, 팝업 탭 기능 추가 등)
                             </td>
-                            <td>
-                                <!-- <a target="_blank" href="#">official site</a> -->
-                            </td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>
