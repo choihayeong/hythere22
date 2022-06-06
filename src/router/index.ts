@@ -58,21 +58,6 @@ const routes = [
 			}
 		]
 	},
-	{
-		path: '/temp',
-		name: 'temp',
-		component: DefaultLayout,
-		children: [
-			{
-				path: '',
-				name: 'temp',
-				meta: {
-					title: 'hythere-temp'
-				},
-				component: () => import('@/components/HelloWorld.vue')
-			}
-		]
-	},
 ];
 
 const router = createRouter({

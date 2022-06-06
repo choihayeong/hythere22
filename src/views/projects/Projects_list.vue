@@ -1,11 +1,19 @@
 <template>
-    <div class="projects">
-        <h2>Projects</h2>
-        <div id="bdot" class="projects__contents">
-            <h3>B DOT Creative</h3>
-            <p>퍼블리셔(UI developer) | 2021.07.20. - Now</p> 
+    <div class="contents">
+        <h2 class="subtitle subtitle--projects">Projects.</h2>
+        <div id="bdot" class="projects">
+            <div class="work-info">
+                <h3 class="work-info__name">
+                    B DOT Creative
+                    <span class="work-info__period">2021.07.20. ~ Now</span>
+                </h3>
+                <p class="work-info__position">
+                    마크업 개발팀 / 사원
+                </p> 
+            </div>
+
             <div class="projects__list">
-                <table>
+                <table class="table table--hover">
                     <caption>Project List</caption>
                     <colgroup>
                         <col width="5%">
@@ -202,20 +210,31 @@
                 </table>
             </div>
         </div>
-        <div id="etarae" class="projects__contents">
-            <h3>Etarae</h3>
-            <p>퍼블리셔(UI developer) | 2021.04.12. - 2021.06.30.</p>
+
+        <div id="etarae" class="projects">
+            <div class="work-info">
+                <h3 class="work-info__name">
+                    Etarae
+                    <span class="work-info__period">2021.04.12. - 2021.06.30.</span>
+                </h3>
+                <p class="work-info__position">
+                    콘텐츠 개발1팀 / 팀원
+                </p> 
+            </div>
+
             <div class="projects__list">
-                <table>
+                <table class="table table--hover">
                     <caption>Project List</caption>
                     <colgroup>
+                        <col width="5%">
                         <col width="20%">
-                        <col width="15%">
+                        <col width="10%">
                         <col width="50%">
                         <col width="15%">
                     </colgroup>
                     <thead>
                         <tr>
+                            <th>구분</th>
                             <th>프로젝트명</th>
                             <th>참여율</th>
                             <th>내용</th>
@@ -224,6 +243,7 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td></td>
                             <td>다락원 전자저작물(한문, 중국어) e-learning 컨텐츠 제작</td>
                             <td>50%</td>
                             <td>

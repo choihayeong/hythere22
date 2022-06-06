@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@media screen and (max-width:1440px) {
+    .wrap {padding:0 25px}
+}
+@media screen and (max-width:769px) {
+    .main-section {padding-left:0;padding-right:0;}
+    .main-section__title {font-size:56px;}
+    .main-section--overview, 
+    .main-section--projects {padding-top:120px;padding-bottom:120px;}
+    .main-section--career {margin-top:120px;}
+    .strength-tag {flex-wrap:wrap;}
+    .strength-tag > li {font-size:16px;}
+    .projects-list {grid-template-columns: repeat(2, 1fr);}
+}

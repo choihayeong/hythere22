@@ -1,3 +1,300 @@
+@charset "UTF-8";
+@import "base";
+@import "variables";
+@import "mixin";
+
+// common
 body {
-    background-color:#fafafa;
+    background-color:$black;
+    color:$white;
+    font-family:$fontFamily;
+    font-size:18px;
+    line-height:1.25;
+    font-weight:400;
 }
+::selection {
+    color:$pointColor2;
+    background-color:$pointColor;
+}
+.wrap {
+    max-width:1440px;
+    margin:0 auto;
+}
+.subtitle {
+    position:relative;
+    color:transparent;
+    -webkit-text-stroke:1px $white;
+    font-size:36px;
+    font-weight:bold;
+    text-transform:uppercase;
+    &::before {
+        content:'';
+        position:absolute;
+        top:4px;
+        left:4px;
+        -webkit-text-stroke:1px $pointColor2;
+    }
+    &::after {
+        content:'';
+        position:absolute;
+        top:-4px;
+        left:-4px;
+        -webkit-text-stroke:1px $pointColor;
+    }
+    &--strength {
+        &::before, &::after {
+            content:'strength.';
+        }
+    }
+    &--career {
+        &::before, &::after {
+            content:'careers.';
+        }
+    }
+    &--projects {
+        &::before, &::after {
+            content:'projects.';
+        }
+    }
+}
+.table {
+    table-layout:fixed;
+    width:100%;
+    th, td {
+        padding:10px;
+        border-bottom:1px solid $white;
+        text-align:left;
+        vertical-align:middle;
+    }
+    thead {
+        th {border-bottom:2px solid $white}
+    }
+    &--striped {
+        tr:nth-child(2n) {
+            th, td {background-color:$pointColor2}
+        }
+    }
+    &--hover {
+        tr:hover {
+            td {background-color:rgba(255,255,255,0.25)}
+        }
+    }
+}
+
+// main
+.main-section {
+    padding:0 60px;
+    &--intro {
+        padding-top:100px;
+    }
+    &__title {
+        font-size:128px;
+        font-weight:bold;
+        text-transform:uppercase;
+        letter-spacing:.02em;
+        &--stroke {
+            color:transparent;
+            text-align:end;
+            -webkit-text-stroke:1px $white;
+        }
+    }
+    &__links {
+        display:flex;
+        gap:15px;
+        margin-top:100px;
+        > a {
+            color:$pointColor;
+            @include transition();
+            &:hover {
+                color:$pointColor2;
+                text-decoration:underline;
+                text-underline-offset:3px;
+            }
+        }
+    }
+    &__info {
+        margin-top:60px;
+        > li {
+            ~ li {
+                margin-top:15px;
+            }
+            > span {
+                font-weight:700;
+            }
+        }
+    }
+    &--overview {
+        padding-top:240px;
+        padding-bottom:240px;
+        font-size:24px;
+        text-align:center;
+        .slogan {
+            a {
+                font-weight:500;
+                text-decoration:underline;
+                text-underline-offset:3px;
+                @include transition();
+                &:hover {
+                    color:$pointColor2;
+                }
+            }
+        }
+    }
+    &--career {
+        margin-top:240px;
+    }
+    &--projects {
+        padding-top:240px;
+        padding-bottom:240px;
+    }
+}
+.strength-tag {
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+    > li {
+        padding:5px 10px;
+        border:2px solid $white;
+        border-radius:8px;
+        font-weight:bold;
+    }
+}
+.strength-detail {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 80px;
+    margin-top: 90px;
+    > li {
+        position:relative;
+        padding:30px;
+        border:2px solid $pointColor;
+        border-radius:25px;
+    }
+    &__title {
+        position:absolute;
+        top:-42px;
+        left:-16px;
+        display:inline-block;
+        padding:10px 15px;
+        border:2px solid $white;
+        background-color:$black;
+        font-size:24px;
+        font-weight:bold;
+        transform:rotate(-15deg);
+    }
+}
+.career-list {
+    margin-top:30px;
+    > li {
+        ~ li {
+            margin-top:15px;
+        }
+        > a {
+            display:inline-block;
+            margin-left:8px;
+            color:$pointColor;
+            @include transition();
+            &:hover {
+                color:$pointColor2;
+                text-decoration:underline;
+                text-underline-offset:3px;
+            }
+        }
+    }
+    &__title {
+        font-size:24px;
+        font-weight:bold;
+    }
+    &__date {
+        margin-left:8px;
+        font-size:18px;
+        font-weight:300;
+    }
+    &__position {
+        display:inline-block;
+        padding:10px 0;
+    }
+}
+.projects-list {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+    margin-top:120px;
+    > li {
+        position:relative;
+        padding:15px 0;
+        cursor:pointer;
+        @include transition();
+        &::after {
+            content:'';
+            position:absolute;
+            bottom:0;
+            left:50%;
+            width:0;
+            height:1px;
+            background-color:$pointColor2;
+            @include transition();
+        }
+        &:hover {
+            &::after {
+                left:0;
+                width:100%;
+            }
+            > .projects-list__title {color:$pointColor;}
+        }
+    }
+    &__title {
+        margin-bottom:8px;
+        font-weight:500;
+    }
+}
+// footer
+.footer {
+    &__wrap {
+        padding:30px 0;
+    }
+    &__copyright {
+        text-align:center;
+    }
+}
+// sub
+.contents {
+    padding:120px 0;
+}
+// projects
+.projects {
+    margin-top:60px;
+    &__list {
+        margin-top:30px;
+        table {
+            th {
+                color:$black;
+                background-color:$pointColor;
+                text-align:center;
+                font-weight:bold;
+            }
+            td {
+                text-align:center;
+                &:nth-child(4) {text-align:left;}
+                > a {display:block;}
+            }
+
+        }
+    }
+}
+.work-info {
+    &__name {
+        font-size:24px;
+        font-weight:bold;
+    }
+    &__period {
+        margin-left:8px;
+        font-size:18px;
+        font-weight:300;
+    }
+    &__position {
+        padding:15px 0;
+    }
+}
+@import "media";
