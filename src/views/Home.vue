@@ -47,7 +47,6 @@
                 <div class="strength-detail__content">
                     ES6+(ES2015) 문법에 익숙합니다. <br>
                     gulp를 사용한 프로젝트 협업에 익숙합니다. <br> 
-                    vite 번들러를 사용할 수 있습니다. <br>
                     babel 등의 트랜스파일러를 사용할 수 있습니다. <br>
                     typescript를 사용할 수 있습니다.
                 </div>
@@ -68,6 +67,7 @@
             <li>
                 <h3 class="strength-detail__title">vue.js</h3>
                 <div class="strength-detail__content">
+                    Options API를 이용한 vue2 문법과 Composition API를 이용한 vue3 문법 모두 활용할 수 있습니다. <br>
                     vuex 사용 경험이 있습니다. <br>
                     vue-router를 사용하여 SPA(single page application)에 대한 이해와 적용이 가능합니다.
                 </div>
@@ -105,6 +105,22 @@
         <h2 class="subtitle subtitle--projects">Projects.</h2>
         <Words />
         <ul class="projects-list">
+            <li>
+                <h3 class="projects-list__title">
+                    HYOSUNG ITX
+                </h3>
+                <p>
+                    효성 ITX 반응형 페이지 구축
+                </p>
+            </li>
+            <li>
+                <h3 class="projects-list__title">
+                    Yuyu HealthCare
+                </h3>
+                <p>
+                    유유헬스케어 리뉴얼 및 운영
+                </p>
+            </li>
             <li>
                 <h3 class="projects-list__title">
                     BlueCove Investment
@@ -244,8 +260,14 @@
     // import { Words } from '@/components'
 
     export default defineComponent({
-        components: {
-            // Words
+        setup() {
+            const components = {
+                // Words
+            };
+        
+            return {
+                components,
+            }
         }
     })
 </script>

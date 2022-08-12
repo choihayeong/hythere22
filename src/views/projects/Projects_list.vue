@@ -193,6 +193,34 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>리뉴얼</td>
+                            <td>유유헬스케어 리뉴얼</td>
+                            <td>100%</td>
+                            <td>
+                                * 반응형 (가로 해상도 360px ~ 1920px 대응) <br>
+                                * 그누보드를 이용한 게시판 관리자 페이지 세팅
+                            </td>
+                            <td>
+                                <a target="_blank" href="http://yuyuh.webmaker21.kr/" disabled>official site</a> <br>
+                                <!-- <a target="_blank" href="#">work</a> -->
+                                * 현재 오픈 전입니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>구축</td>
+                            <td>효성ITX</td>
+                            <td>60%</td>
+                            <td>
+                                * 반응형 (가로 해상도 360px ~ 1920px 대응) <br>
+                                * gulp, scss 사용
+                            </td>
+                            <td>
+                                <a target="_blank" href="#" disabled>official site</a> <br>
+                                <!-- <a target="_blank" href="#">work</a> -->
+                                * 현재 오픈 전입니다.
+                            </td>
+                        </tr>
+                        <tr>
                             <td>운영</td>
                             <td>유한킴벌리 외 3개 사이트 운영 및 서포트</td>
                             <td>100%</td>
