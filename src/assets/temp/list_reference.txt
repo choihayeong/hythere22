@@ -1,0 +1,48 @@
+포트폴리오 레퍼런스 (수집즁....... 모두 다 적용x 선택 해서 몇 개만!)
+
+컬러칩 선택 사이트: https://colorhunt.co/
+웹 접근성을 위한 컬러 선택 사이트: https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=a05779
+simple parallax 사이트: https://simpleparallax.com/
+smooth scrollbar: https://idiotwu.github.io/smooth-scrollbar/
+복사하기 플러그인: https://clipboardjs.com/
+clip-path maker: https://bennettfeely.com/clippy/
+
+☆ 1/ 배경 흘러가는 효과
+- 별 흘러가는 효과(코드펜) https://codepen.io/Suburbanno/pen/OXeMvw
+
+2(버튼 호버 인터랙션)/ clip-path 쓰기, scroll-snap, + sticky
+- https://www.wolffolins.com/ (clip-path는 gnb에 적용, scroll-snap)
+- 버튼 호버시 clip-path 적용 (https://victor.work/)
+
+3/ 컨텐츠 스크롤 시 제목 sticky 적용 (height 등 반응형에도 적용)
+- http://www.eugenes.co.kr/ (2섹션) + 4섹션 파란 배경 인터랙션 + 마우스 포인터 인터랙션
+- https://www.hyundai-autoever.com/kor/main/index.do (business area 섹션)
+
+★  4/ 마우스 포인터 인터랙션2
+& SCROLL TO EXPLORE 인터랙션 효과
+- https://www.magnetism.fr/en/
+
+5/ 마스크 인터랙션 효과
+- https://monopo.vn/ 
+
+★ 6(버튼 호버 인터랙션)/ 동그라미 화살표 버튼 호버 인터랙션
+- http://forumam.com/who-we-are
+
+7(버튼 호버 인터랙션)/ 코드펜 버튼 호버 인터랙션(시계방향 외)
+- https://codepen.io/giana/pen/yYBpVY
+
+★ 8/ 애플 사이트 인터랙션 적용 예
+- https://1784.navercorp.com/ 네이버 1784
+
+9(버튼 호버 인터랙션)/ 동심원으로 퍼지는 것 같은 호버 인터랙션
+- https://hkd-microbiome.com/ko/
+
+★ 10/ 풀페이지 적용 예
+& gnb(혹은 사이트맵) 클릭시 배경 색 랜덤으로 바뀌기 위에서 아래로 셔터 열고 닫는 것 같은 효과
+- https://appknot.com/
+
+11/ 비디오 인터랙션 
+- https://www.leferi.co.kr/
+
+12/ 헤더가 처음 진입 시 아래에 붙어있는 사이트 예시
+- https://www.fands-c.com/
