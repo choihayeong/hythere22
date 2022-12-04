@@ -55,14 +55,6 @@ const routes = [
 				},
 				component: () => import('@/views/projects/ProjectsList_Etarae.vue')
 			},
-			{
-				path: '',
-				name: 'projectslist',
-				meta: {
-					title: 'hythere'
-				},
-				component: () => import('@/views/projects/Projects_list.vue')
-			},
 			/*{
 				path: ':id',
 				name: 'projectsview',
