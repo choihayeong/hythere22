@@ -4,7 +4,7 @@
 @import "mixin";
 // common
 body {
-    background-color:$black;
+    background-color:#252525;
     color:$white;
     font-family:$fontFamily;
     font-size:18px;
@@ -56,6 +56,8 @@ button {cursor:pointer}
         }
     }
     &--projects {
+        display: inline-block;
+        text-align:center;
         &::before, &::after {
             content:'projects.';
         }
@@ -171,6 +173,7 @@ button {cursor:pointer}
     &--projects {
         padding-top:240px;
         padding-bottom:240px;
+        text-align:center;
     }
 }
 .strength-tag {
@@ -203,7 +206,7 @@ button {cursor:pointer}
         display:inline-block;
         padding:10px 15px;
         border:2px solid $white;
-        background-color:$black;
+        background-color:#252525;
         font-size:24px;
         font-weight:bold;
         transform:rotate(-15deg);

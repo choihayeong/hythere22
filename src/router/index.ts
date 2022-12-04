@@ -1,5 +1,4 @@
 import {createWebHistory, createRouter} from "vue-router";
-
 import DefaultLayout from '@/layout/index.vue';
 
 type Meta = {
@@ -32,7 +31,7 @@ const routes = [
 					title: 'hythere'
 				},
 				component: () => import('@/views/Home.vue')
-			}
+			},
 		]
 	},
 	{
@@ -41,6 +40,22 @@ const routes = [
 		component: DefaultLayout,
 		children: [
 			{
+				path: 'list_bdot',
+				name: 'ProjectList_Bdot',
+				meta: {
+					title: 'hythere'
+				},
+				component: () => import('@/views/projects/ProjectsList_Bdot.vue')
+			},
+			{
+				path: 'list_etarae',
+				name: 'ProjectList_Etarae',
+				meta: {
+					title: 'hythere'
+				},
+				component: () => import('@/views/projects/ProjectsList_Etarae.vue')
+			},
+			{
 				path: '',
 				name: 'projectslist',
 				meta: {
@@ -48,14 +63,14 @@ const routes = [
 				},
 				component: () => import('@/views/projects/Projects_list.vue')
 			},
-			{
+			/*{
 				path: ':id',
 				name: 'projectsview',
 				meta: {
 					title: 'hythere'
 				},
 				component: () => import('@/views/projects/Projects_view.vue')
-			}
+			} */
 		]
 	},
 ];

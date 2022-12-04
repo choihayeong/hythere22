@@ -1,7 +1,6 @@
 <template>
     <section class="main-section main-section--intro">
         <h1 class="main-section__title">Hythere!</h1>
-        <!-- <img src="" alt=""> -->
         <div class="main-section__title main-section__title--stroke">
             choi <br>
             hayeong
@@ -84,7 +83,7 @@
                 </h3>
                 <span class="career-list__position">마크업 개발팀 / 사원</span>
                 
-                <router-link to="/projects#bdot">
+                <router-link to="/projects/list_bdot">
                     Projects List
                 </router-link>
             </li>
@@ -95,7 +94,7 @@
                 </h3>
                 <span class="career-list__position">콘텐츠 개발1팀 / 팀원</span>
 
-                <router-link to="/projects#etarae">
+                <router-link to="/projects/list_etarae">
                     Projects List
                 </router-link>
             </li>
@@ -244,7 +243,7 @@
                 <p>javascript로 만든 다양한 미니 게임</p>
                 <!-- <a href="#">Github Link</a> -->
             </li>
-           <li>
+            <li>
                 <h3 class="projects-list__title">
                     BasicPaint
                 </h3>
