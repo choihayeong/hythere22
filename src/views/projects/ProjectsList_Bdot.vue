@@ -38,13 +38,12 @@
                             <td>50%</td>
                             <td>
                                 * 총 17 페이지(메인 1, 서브 16) <br>
-                                * 레이어팝업 추가
+                                * 해상도 375px ~ 1920px 대응
                             </td>
                             <td>
-                                <!-- <a target="_blank" href="/work/haesungind/web/list.html">work list</a> -->
                                 <a target="_blank" href="http://www.haesungind.co.kr/">official site</a>
-                                <a target="_blank" href="/work/haesungind/web/">pc</a>
-                                <a target="_blank" href="/work/haesungind/mo/">mo</a>
+                                <!-- <a target="_blank" href="/work/haesungind/web/">pc</a>
+                                <a target="_blank" href="/work/haesungind/mo/">mo</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -54,15 +53,12 @@
                             <td>
                                 * pc 해상도 1200px부터 대응 <br>
                                 * 모바일 해상도 375px ~ 1024px 대응 <br>
-                                * 회원가입 페이지 퍼블리싱 <br>
-                                * 카카오 지도 api 추가 <br>
-                                * 이메일 뉴스레터 코딩 3건(주간 보고서, 특별 보고서, 월간 보고서)
+                                * 모바일 하이브리드 앱
                             </td>
                             <td>
-                                <!-- <a target="_blank" href="/work/wfri/web/list.html">work list</a> -->
                                 <a target="_blank" href="https://www.wfri.re.kr/">official site</a>
-                                <a target="_blank" href="/work/wfri/web/">pc</a>
-                                <a target="_blank" href="/work/wfri/mo/">mo</a>
+                                <!-- <a target="_blank" href="/work/wfri/web/">pc</a>
+                                <a target="_blank" href="/work/wfri/mo/">mo</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -74,9 +70,8 @@
                                 * 고도몰 스킨 커스터마이징
                             </td>
                             <td>
-                                <!-- <a target="_blank" href="/work/ulos/list.html">work list</a> -->
                                 <a target="_blank" href="https://www.ulos.co.kr/">offical site</a>
-                                <a target="_blank" href="/work/ulos/main.html">work</a>
+                                <!-- <a target="_blank" href="/work/ulos/main.html">work</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -85,11 +80,10 @@
                             <td>100%</td>
                             <td>
                                 * 반응형(가로 해상도 375px ~ 1920px 대응) <br>
-                                * 고도몰 스킨 커스터마이징 <br>
-                                * 회사 홈페이지(paulmade.co.kr/) 인스타그램 연동 (light widget)
+                                * 고도몰 솔루션을 이용한 쇼핑몰 구축 및 스킨 커스터마이징 <br>
+                                * 회사 홈페이지(paulmade.co.kr/) 인스타 위젯 연동 (light widget)
                             </td>
                             <td>
-                                <!-- <a target="_blank" href="#">work list</a> -->
                                 <a target="_blank" href="https://www.paulmademall.com/">offical site <br> (폴메이드몰)</a>
                                 <a target="_blank" href="https://www.paulmade.co.kr/"> offical site <br> (회사 홈페이지)</a>
                             </td>
@@ -103,24 +97,22 @@
                                 * 뉴스룸 섹션 전체 레이아웃 1080px -> 980px 변경
                             </td>
                             <td>
-                                <!-- <a target="_blank" href="#">work list</a> -->
                                 <a target="_blank" href="https://news.pulmuone.co.kr/pulmuone/newsroom/listEsgMain.do">official site</a>
-                                <a target="_blank" href="/work/pulmuone/newsroom/esg/">work</a>
+                                <!-- <a target="_blank" href="/work/pulmuone/newsroom/esg/">work</a> -->
                             </td>
                         </tr>
                         <tr>
                             <td>운영</td>
-                            <td>원익 ips esg 섹션 추가</td>
+                            <td>원익 ips > ESG 페이지 추가</td>
                             <td>50%</td>
                             <td>
                                 * pc, 모바일 / 국문, 영문 <br>
                                 * 제보하기 2페이지 리뉴얼(pc), esg 섹션 5페이지 추가(pc / 모바일)
                             </td>
                             <td>
-                                <!-- <a target="_blank" href="/work/ips/ko/list.html">work list</a> -->
                                 <a target="_blank" href="https://www.ips.co.kr/ko/esg/environment.php">official site</a>
-                                <a target="_blank" href="/work/ips/ko/esg/environment.php">pc</a>
-                                <a target="_blank" href="/work/ips/ko/mo/esg/environment.php">mo</a>
+                                <!-- <a target="_blank" href="/work/ips/ko/esg/environment.php">pc</a>
+                                <a target="_blank" href="/work/ips/ko/mo/esg/environment.php">mo</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -133,13 +125,12 @@
                                 * 게시판 댓글 섹션 레이아웃 커스터마이징
                             </td>
                             <td>
-                                <!-- <a href="#">work list</a> -->
                                 <a target="_blank" href="https://www.naturemademall.co.kr/">official site</a>
                                 <a target="_blank" href="/work/naturemade/web/">pc</a>
                                 <a target="_blank" href="/work/naturemade/mo/">mo</a>
                             </td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>구축</td>
                             <td>원픽 앱 퍼블리싱 리뉴얼 서포트</td>
                             <td>25%</td>
@@ -148,9 +139,9 @@
                                 * sourcetree, 협업툴 이용
                             </td>
                             <td>
-                                <!-- <a href="#">work list</a> -->
+                                <a href="#">work list</a>
                             </td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <td>구축</td>
                             <td>비닷크리에이티브 회사 홈페이지 구축</td>
@@ -158,12 +149,10 @@
                             <td>
                                 * 반응형 (가로 해상도 375px ~ 1920px 대응) <br>
                                 * 총 8 페이지 (메인 1, 서브 7) <br>
-                                * vue (version 3) 사용
+                                * vue 프레임워크 사용(version 3 - composition api, setup 함수 적용)
                             </td>
                             <td>
-                                <!-- <a target="_blank" href="/work/bdot/list.html">work list</a> -->
-                                <!-- <a target="_blank" href="#">official site</a> -->
-                                <a target="_blank" href="/work/bdot/">work</a>
+                                <a target="_blank" href="https://bdot.co.kr/">official site</a>
                             </td>
                         </tr>
                         <tr>
@@ -172,11 +161,11 @@
                             <td>30%</td>
                             <td>
                                 * 반응형 (가로 해상도 375px ~ 1920px 대응) <br>
-                                * gulp, scss 사용
+                                * openWAX, w3c를 이용한 웹 표준/접근성 심사 <br>
+                                * gulp, github, sourcetree를 이용한 협업 및 scss 사용
                             </td>
                             <td>
                                 <a target="_blank" href="https://www.yuyuteijin.co.kr/">official site</a>
-                                <!-- <a target="_blank" href="#">work</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -185,11 +174,10 @@
                             <td>30%</td>
                             <td>
                                 * 반응형 (가로 해상도 375px ~ 1920px 대응) <br>
-                                * gulp, scss 사용
+                                * gulp, github, sourcetree를 이용한 협업 및 scss 사용
                             </td>
                             <td>
                                 <a target="_blank" href="https://www.bluecoveinvestment.com/">official site</a>
-                                <!-- <a target="_blank" href="#">work</a> -->
                             </td>
                         </tr>
                         <tr>
@@ -198,11 +186,10 @@
                             <td>100%</td>
                             <td>
                                 * 반응형 (가로 해상도 360px ~ 1920px 대응) <br>
-                                * 그누보드를 이용한 게시판 관리자 페이지 세팅
+                                * 그누보드 cms를 활용한 관리자 게시판 세팅
                             </td>
                             <td>
-                                <a target="_blank" href="https://www.yuyuhc.co.kr/">official site</a> <br>
-                                <!-- <a target="_blank" href="#">work</a> -->
+                                <a target="_blank" href="https://www.yuyuhc.co.kr/">official site</a>
                             </td>
                         </tr>
                         <tr>
@@ -211,11 +198,11 @@
                             <td>60%</td>
                             <td>
                                 * 반응형 (가로 해상도 360px ~ 1920px 대응) <br>
-                                * gulp, scss 사용
+                                * openWAX, w3c를 이용한 웹 표준/접근성 심사 <br>
+                                * gulp, github, sourcetree를 이용한 협업 및 scss 사용
                             </td>
                             <td>
-                                <a target="_blank" href="https://www.hyosungitx.com/ko/main.do" disabled>official site</a> <br>
-                                <!-- <a target="_blank" href="#">work</a> -->
+                                <a target="_blank" href="https://www.hyosungitx.com/ko/main.do">official site</a>
                             </td>
                         </tr>
                         <tr>
@@ -224,12 +211,10 @@
                             <td>90%</td>
                             <td>
                                 * 반응형 (가로 해상도 360px ~ 1920px 대응) <br>
-                                * vue.js (version 2) 사용
+                                * vue.js(version 2.xx) 프레임워크를 활용한 협업 및 웹팩, scss 사용
                             </td>
                             <td>
-                                <a target="_blank" href="#" disabled>official site</a> <br>
-                                <!-- <a target="_blank" href="#">work</a> -->
-                                * 2023.01.01 오픈 예정
+                                <a target="_blank" href="https://askcompany.co.kr/">official site</a>
                             </td>
                         </tr>
                         <tr>
@@ -238,25 +223,38 @@
                             <td>50%</td>
                             <td>
                                 * 반응형 (가로 해상도 360px ~ 1920px 대응) <br>
-                                * vue.js (version 2) 사용
+                                * vue.js(version 2.xx) 프레임워크를 활용한 협업 및 웹팩, scss 사용 <br>
+                                * 기업개요 페이지 인터랙션 적용 (https://www.rimankorea.com/about/overview)
                             </td>
                             <td>
-                                <a target="_blank" href="#" disabled>official site</a> <br>
-                                <!-- <a target="_blank" href="#">work</a> -->
-                                * 2023.01.01 오픈 예정
+                                <a target="_blank" href="https://www.rimankorea.com/">official site</a>
                             </td>
                         </tr>
                         <tr>
-                            <td>운영</td>
-                            <td>유한킴벌리 외 3개 사이트 운영 및 서포트</td>
-                            <td>100%</td>
+                            <td>구축 - 진행중</td>
+                            <td>유한양행 자사몰(YH MALL)</td>
+                            <td>-</td>
                             <td>
-                                * 유한킴벌리, 유유제약, 삼성종합기술원, 코오로이 <br>
-                                * 공통 - 텍스트, 이미지 교체 및 추가 <br>
-                                * 마끼다 - 이메일 뉴스레터 코딩 1건 <br>
-                                * 이연제약 - 팝업 추가(오늘하루 보지 않기, 팝업 탭 기능 추가 등)
+                                * 반응형 (가로 해상도 375px ~ 1920px 대응) <br>
+                                * 고도몰 솔루션을 이용한 쇼핑몰 구축 및 스킨 커스터마이징
                             </td>
-                            <td></td>
+                            <td>
+                                <a target="_blank" href="#" disabled>official site</a>
+                                * 2023년 3~4월 중 오픈 예정
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>구축 - 진행중</td>
+                            <td>원익 큐엔씨</td>
+                            <td>-</td>
+                            <td>
+                                * 반응형 (가로 해상도 375px ~ 1920px 대응) <br>
+                                * gulp, github, sourcetree를 이용한 협업 및 scss 사용
+                            </td>
+                            <td>
+                                <a target="_blank" href="#" disabled>official site</a>
+                                * 2023년 3~4월 중 오픈 예정
+                            </td>
                         </tr>
                     </tbody>
                 </table>

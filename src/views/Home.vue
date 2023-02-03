@@ -8,8 +8,8 @@
         <div class="main-section__links">
             <a href="https://github.com/choihayeong" target="_blank">github</a>
             <a href="https://hythere.tistory.com/" target="_blank">blog</a>
-            <a href="#" target="_blank">resume</a>
-            <a href="#" target="_blank">linkedin</a>
+            <a href="https://my.surfit.io/w/1146355103" target="_blank">resume</a>
+            <a href="https://www.linkedin.com/in/hayeong-choi-85b7b2183/" target="_blank">linkedin</a>
         </div>
         <ul class="main-section__info">
             <li>
@@ -104,6 +104,38 @@
         <h2 class="subtitle subtitle--projects">Projects.</h2>
         <Words />
         <ul class="projects-list">
+            <li>
+                <h3 class="projects-list__title">
+                    원익 큐엔씨 (~ing)
+                </h3>
+                <p>
+                    원익 큐엔씨 반응형 웹페이지 구축
+                </p>
+            </li>
+            <li>
+                <h3 class="projects-list__title">
+                    유한양행 자사몰 (YHMALL) (~ing)
+                </h3>
+                <p>
+                    유한양행 자사몰 반응형 쇼핑몰 구축
+                </p>
+            </li>
+            <li>
+                <h3 class="projects-list__title">
+                    에스크컴퍼니
+                </h3>
+                <p>
+                    에스크컴퍼니 리뉴얼 반응형 페이지 구축
+                </p>
+            </li>
+            <li>
+                <h3 class="projects-list__title">
+                    리만코리아
+                </h3>
+                <p>
+                    리만코리아 리뉴얼 반응형 페이지 구축
+                </p>
+            </li>
             <li>
                 <h3 class="projects-list__title">
                     HYOSUNG ITX
