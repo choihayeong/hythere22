@@ -231,6 +231,31 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>구축</td>
+                            <td>원익 큐엔씨</td>
+                            <td>50%</td>
+                            <td>
+                                * 반응형 (가로 해상도 375px ~ 1920px 대응) <br>
+                                * gulp, github, sourcetree를 이용한 협업 및 scss 사용
+                            </td>
+                            <td>
+                                <a target="_blank" href="https://www.wonikqnc.com/ko/">official site</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>구축</td>
+                            <td>한국도레이과학진흥재단</td>
+                            <td>90%</td>
+                            <td>
+                                * 반응형 (가로 해상도 375px ~ 1920px 대응) <br>
+                                * gulp, github, sourcetree를 이용한 협업 및 scss 사용 <br>
+                                * 영문, 일문 다국어 진행 (예정)
+                            </td>
+                            <td>
+                                <a target="_blank" href="https://www.koreatoraysf.org/main.do">official site</a>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>구축 - 진행중</td>
                             <td>유한양행 자사몰(YH MALL)</td>
                             <td>-</td>
@@ -240,22 +265,10 @@
                             </td>
                             <td>
                                 <a target="_blank" href="#" disabled>official site</a>
-                                * 2023년 3~4월 중 오픈 예정
+                                * 2023년 5월 중 오픈 예정
                             </td>
                         </tr>
-                        <tr>
-                            <td>구축 - 진행중</td>
-                            <td>원익 큐엔씨</td>
-                            <td>-</td>
-                            <td>
-                                * 반응형 (가로 해상도 375px ~ 1920px 대응) <br>
-                                * gulp, github, sourcetree를 이용한 협업 및 scss 사용
-                            </td>
-                            <td>
-                                <a target="_blank" href="#" disabled>official site</a>
-                                * 2023년 3~4월 중 오픈 예정
-                            </td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>

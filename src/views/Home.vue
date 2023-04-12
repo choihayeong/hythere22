@@ -106,7 +106,15 @@
         <ul class="projects-list">
             <li>
                 <h3 class="projects-list__title">
-                    원익 큐엔씨 (~ing)
+                    한국도레이과학진흥재단
+                </h3>
+                <p>
+                    한국도레이과학진흥재단 반응형 웹페이지 구축
+                </p>
+            </li>
+            <li>
+                <h3 class="projects-list__title">
+                    원익 큐엔씨
                 </h3>
                 <p>
                     원익 큐엔씨 반응형 웹페이지 구축
