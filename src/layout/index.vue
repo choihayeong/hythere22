@@ -9,21 +9,22 @@
 </template>
 
 <script>
-import { defineComponent, onBeforeMount, computed } from 'vue';
+import { onBeforeMount, computed } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { TheHeader, TheFooter } from './components';
 
-export default defineComponent({
+export default ({
+	components: {
+		TheHeader,
+		TheFooter
+	},
+
 	setup() {
 		const router = useRouter();
 		const route = useRoute();
 		const name = 'DefaultLayout';
 		const userThemeChaning = () => {
 			console.log('user click theme chaning button');
-		};
-		const components ={
-			TheHeader,
-			TheFooter
 		};
 		const key = computed(() => {
 			return route.path;
@@ -34,7 +35,6 @@ export default defineComponent({
 		return {
 			name,
 			userThemeChaning,
-			components,
 			key,
 		}
 	}
