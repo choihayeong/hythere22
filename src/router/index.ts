@@ -1,4 +1,4 @@
-import {createWebHistory, createRouter} from "vue-router";
+import {createWebHistory, createRouter} from 'vue-router';
 import DefaultLayout from '@/layout/index.vue';
 
 type Meta = {
@@ -69,7 +69,22 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
-    routes,
-});
+	scrollBehavior(to) {
+		if (to.hash) {
+			return {
+				behavior: 'smooth',
+				selector: to.hash,
+				offset : {
+					y: 200
+				}
+			}
+		}
+
+		return {
+			x: 0, y: 0
+		}
+	},
+    routes
+})
 
 export default router;

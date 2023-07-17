@@ -5,6 +5,7 @@ import store from './store';
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
+import './assets/sass/common.scss';
 
 const app = createApp(App);
 

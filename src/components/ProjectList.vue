@@ -1,12 +1,14 @@
 <template>
     <ul class="projects-list">
         <li v-for="(item, index) in workData" :key="index">
-            <h3 class="projects-list__title">
-                {{ item.title }}
-            </h3>
-            <p>
-                {{ item.summary }}
-            </p>
+            <a :href="item.link" target="_blank">
+                <span class="projects-list__title">
+                    {{ item.title }}
+                </span>
+                <span class="projects-list__summary">
+                    {{ item.summary }}
+                </span>
+            </a>
         </li>
     </ul>
 </template>

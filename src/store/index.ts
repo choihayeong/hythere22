@@ -10,7 +10,7 @@ export default createStore({
                 title: '유한양행 자사몰 (YHMALL) (~ing)',
                 date: '2023.05.01 (예정)',
                 summary: '유한양행 자사몰 반응형 쇼핑몰 구축',
-                link: '',
+                link: 'https://www.yuhanshop.co.kr/',
                 description: [
                     '고도몰 솔루션을 이용한 쇼핑몰 구축 및 고도몰 스킨 커스터마이징',
                     '반응형(가로 해상도 375px ~ 1920px 대응)',
@@ -234,14 +234,14 @@ export default createStore({
                 link: 'https://choihayeong.github.io/weatherApi/',
                 description: [],
             },
-            {
-                id: 5,
-                title: 'jsTimer',
-                date: '',
-                summary: 'javascript로 만든 timer 앱',
-                link: '',
-                description: [],
-            },
+            // {
+            //     id: 5,
+            //     title: 'jsTimer',
+            //     date: '',
+            //     summary: 'javascript로 만든 timer 앱',
+            //     link: '',
+            //     description: [],
+            // },
             {
                 id: 4,
                 title: 'vanilla-todo',
@@ -266,14 +266,14 @@ export default createStore({
                 link: 'https://choihayeong.github.io/jsGame/',
                 description: [],
             },
-            {
-                id: 1,
-                title: 'BasicPaint',
-                date: '',
-                summary: 'html5 canvas를 이용한 간단한 그림판 앱',
-                link: '',
-                description: [],
-            },
+            // {
+            //     id: 1,
+            //     title: 'BasicPaint',
+            //     date: '',
+            //     summary: 'html5 canvas를 이용한 간단한 그림판 앱',
+            //     link: '',
+            //     description: [],
+            // },
         ],
     }
 })

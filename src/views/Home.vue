@@ -75,7 +75,7 @@
             <div class="row">
                 <ul class="strength__tag">
                     <li>vue.js</li>
-                    <li>javscript</li>
+                    <li>javascript</li>
                     <li>scss</li>
                     <li>html5</li>
                     <li>css3</li>
@@ -92,7 +92,7 @@
                         <h3 class="strength__title">Javascript</h3>
                         <div class="strength__content"> 
                             * ES6+(ES2015) 문법에 익숙합니다. <br> 
-                            * gulp를 사용한 프로젝트 협업에 익숙합니다. <br> 
+                            * gulp 및 webpack를 사용한 빌드도구 및 프로젝트 협업에 익숙합니다. <br> 
                             * babel 등의 트랜스파일러를 사용할 수 있습니다. <br> 
                             * typescript를 사용할 수 있습니다. 
                         </div>
@@ -101,7 +101,7 @@
                         <h3 class="strength__title">vue.js</h3>
                         <div class="strength__content"> 
                             * Options API를 이용한 vue2 문법과 Composition API를 이용한 vue3 문법 모두 활용할 수 있습니다. <br> 
-                            * vuex를 사용하여 api 데이터를 불러오는 작업에 대한 경험이 있습니다. <br> 
+                            * vuex 및 axios를 활용하여 자원의 상태관리 및 api 데이터를 불러오는 작업에 대한 경험이 있습니다. <br> 
                             * vue-router를 사용하여 SPA(single page application)에 대한 이해와 적용이 가능합니다. 
                         </div>
                     </li>
@@ -109,11 +109,11 @@
                         <h3 class="strength__title">html5/css3</h3>
                         <div class="strength__content"> 
                             * 웹표준을 지키려 노력합니다. <br> 
-                            * 반응형, 적응형 구현이 가능합니다. <br> 
+                            * 반응형/적응형 구현이 가능합니다. <br> 
                             * SCSS 문법에 익숙합니다. <br> 
                             * BEM 방법론을 사용하여 css를 적용합니다. <br> 
                             * 크로스 브라우징에 대응할 수 있습니다. <br> 
-                            * flex와 grid를 활용할 수 있습니다. <br> 
+                            * css3 flexbox와 grid를 활용할 수 있습니다. <br> 
                             * keyframe을 활용한 애니메이션 기법을 활용할 수 있습니다. <br> 
                             * bootstrap(v.5) 사용 경험이 있습니다. 
                         </div>
@@ -126,7 +126,7 @@
         <section class="main-section main-section--projects">
             <h2 class="main__title">Projects</h2>
             <div class="projects-inner">
-                <ProjectList />
+                <project-list></project-list>
                 <div class="projects-bg">
                     <!-- <router-link :to="`/projects/list_bdot`">
                     Detail
@@ -147,9 +147,8 @@
 
     export default defineComponent({
         components: {
-            ProjectList,
+            ProjectList
         },
-
         setup() {
             const sizes = ref([1,1,2,3,4]);
 
@@ -197,8 +196,7 @@
 
                     if (visual !== null) {
                         visual.appendChild(div);
-                    }
-                    
+                    }   
                 }
             }
 
@@ -221,7 +219,7 @@
             })
 
             return {
-                sizes,
+                sizes
             }
         }
     })

@@ -47,7 +47,7 @@ body {
 }
 .hythere {
     color:#fff;
-    font-size:128px;
+    font-size:10vw;
     font-weight:bold;
     text-transform:uppercase;
     letter-spacing:.02em;
@@ -408,12 +408,18 @@ body {
                 left:0;
                 width:100%;
             }
-            > .projects-list__title {color:$pointColor;}
+            .projects-list__title {
+                color:$pointColor;
+            }
         }
     }
     &__title {
+        display:block;
         margin-bottom:8px;
         font-weight:500;
+    }
+    &__summary {
+        display:block;
     }
 }
 
