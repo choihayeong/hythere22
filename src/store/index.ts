@@ -7,7 +7,8 @@ export default createStore({
         workData: [
             {
                 id: 24,
-                title: '유한양행 자사몰 (YHMALL) (~ing)',
+                category: '구축 | 쇼핑몰 | 고도몰 | 반응형(mobile-first)',
+                title: '유한양행 자사몰 (YHMALL)',
                 date: '2023.05.01 (예정)',
                 summary: '유한양행 자사몰 반응형 쇼핑몰 구축',
                 link: 'https://www.yuhanshop.co.kr/',
@@ -19,6 +20,7 @@ export default createStore({
             },
             {
                 id: 23,
+                category: '구축 | 리뉴얼 | 기업사이트 | 반응형',
                 title: '한국도레이과학진흥재단',
                 date: '~ 2023.04.07',
                 summary: '한국도레이과학진흥재단 반응형 웹페이지 구축',
@@ -31,6 +33,7 @@ export default createStore({
             },
             {
                 id: 22,
+                category: '구축 | 리뉴얼 | 기업사이트 | 반응형',
                 title: '원익큐엔씨',
                 date: '~ 2023.03.31',
                 summary: '원익 큐엔씨 반응형 웹페이지 구축',
@@ -39,36 +42,40 @@ export default createStore({
                     '원익큐엔씨 기업 사이트 반응형(375px ~ 1920px 해상도 대응) 웹 퍼블리싱',
                     'gulp, github, sourcetree를 이용한 협업 및 scss 사용',
                     '구축 참여도: 30% (퍼블리셔 3인)',
+                    '메인 가로스크롤을 활용한 넓고 시원한 움직임 효과',
                 ],
             },
             {
                 id: 21,
+                category: '구축 | 리뉴얼 | 기업사이트 | 반응형',
                 title: 'RIMAN KOREA',
                 date: '2022.10.01 ~ 2022.12.31',
                 summary: '리만코리아 기업사이트 반응형 페이지 구축',
                 link: 'https://www.rimankorea.com/',
                 description: [
-                    'vue.js(2 버전) 프레임워크 및 웹팩 빌드 도구 활용 및 scss 사용',
-                    'AWS CODE COMMIT 활용한 협업',
+                    'vue.js(2 버전) 프레임워크 및 webpack 빌드 도구 활용 및 scss 사용',
+                    'AWS - CODE COMMIT 활용한 협업',
                     '375px ~ 1920px 해상도 대응',
                     '구축 참여도: 50% (프론트)',
                 ]
             },
             {
                 id: 20,
+                category: '구축 | 리뉴얼 | 기업사이트 | 반응형',
                 title: 'ASK COMPANY',
                 date: '2022.10.01 ~ 2022.12.31',
                 summary: '에스크컴퍼니 기업사이트 반응형 페이지 구축',
                 link: 'https://askcompany.co.kr/',
                 description: [
-                    'vue.js(2 버전) 프레임워크 및 웹팩 빌드 도구 활용 및 scss 사용',
-                    'AWS CODE COMMIT 활용한 협업',
+                    'vue.js(2 버전) 프레임워크 및 webpack 빌드 도구 활용 및 scss 사용',
+                    'AWS - CODE COMMIT 활용한 협업',
                     '375px ~ 1920px 해상도 대응',
                     '구축 참여도: 100% (프론트)',
                 ]
             },
             {
                 id: 19,
+                category: '구축 | 리뉴얼 | 기업사이트 | 반응형',
                 title: 'HYOSUNG ITX',
                 date: '2022.06.01 ~ 2022.09.30',
                 summary: '효성 ITX 반응형 페이지 구축',
@@ -82,6 +89,7 @@ export default createStore({
             },
             {
                 id: 18,
+                category: '운영 | 리뉴얼 | 기업사이트 | 그누보드',
                 title: 'Yuyu HealthCare',
                 date: '2022.06.01 ~ 2022.09.01',
                 summary: '유유헬스케어 리뉴얼 및 운영',
@@ -94,6 +102,7 @@ export default createStore({
             },
             {
                 id: 17,
+                category: '구축 | 기업사이트 | 반응형',
                 title: 'BlueCove Investment',
                 date: '2022.02.01 ~ 2022.04.01',
                 summary: '블루코브자산운용 구축 서포트',
@@ -101,12 +110,12 @@ export default createStore({
                 description: [
                     '블루코브자산운용 기업 사이트 반응형(375px ~ 1920px 해상도 대응) 웹 퍼블리싱',
                     'gulp, github, sourcetree를 이용한 협업 및 scss 사용',
-                    '영문 다국어 진행',
                     '구축 참여도: 30% (퍼블리셔 3인)',
                 ]
             },
             {
                 id: 16,
+                category: '구축 | 기업사이트 | 반응형',
                 title: 'Yuyuteijin',
                 date: '2022.01.01 ~ 2022.03.30',
                 summary: '유유테이진 구축 서포트 및 운영',
@@ -120,18 +129,21 @@ export default createStore({
             },
             {
                 id: 15,
+                category: '구축 | 리뉴얼 | 기업사이트 | 반응형',
                 title: 'B DOT CREATIVE',
                 date: '2022.01.01 ~ ',
                 summary: '비닷 크리에이티브 회사 홈페이지 구축',
                 link: 'https://www.bdot.co.kr/',
                 description: [
                     'vue.js(3 버전) 프레임워크, vite 빌드 도구 이용',
-                    '반응형 375px ~ 1024px 해상도 대응',
+                    'backend api 커스터마이징(express.js)',
+                    '반응형 375px ~ 1920px 해상도 대응',
                     '구축 참여도: 30% (퍼블리셔 3인)',
                 ]
             },
             {
                 id: 14,
+                category: '구축 | 리뉴얼',
                 title: 'ONE PICK',
                 date: '2021.12.01 ~ 2022.01.30.',
                 summary: '원픽 숙박앱 구축 퍼블리싱 서포트',
@@ -144,6 +156,7 @@ export default createStore({
             },
             {
                 id: 13,
+                category: '구축 | 쇼핑몰 | 고도몰',
                 title: 'PAULMADE MALL',
                 date: '2021.11.01 ~ 2021.11.30.',
                 summary: '폴메이드 고도몰 구축 및 운영',
@@ -157,6 +170,7 @@ export default createStore({
             },
             {
                 id: 12,
+                category: '구축 | 하이브리드앱 | 적응형',
                 title: 'WFRI',
                 date: '2021.10. ~ 2021.11.30.',
                 summary: '우리금융경영연구소 기업사이트 구축 및 서포트',
@@ -170,6 +184,7 @@ export default createStore({
             },
             {
                 id: 11,
+                category: '구축 | 적응형',
                 title: 'HAESUNG INDUSTRY',
                 date: '2021.07. ~ 2021.09.30.',
                 summary: '해성산업 기업사이트 구축',
@@ -181,6 +196,7 @@ export default createStore({
             },
             {
                 id: 10,
+                category: '구축 | 쇼핑몰 | 고도몰',
                 title: 'ULOS',
                 date: '2021.07. ~ 2022.03.31.',
                 summary: '우르오스 고도몰 구축 서포트 및 운영',
@@ -193,6 +209,7 @@ export default createStore({
             },
             {
                 id: 9,
+                category: '운영 | 쇼핑몰 | 고도몰',
                 title: 'NATUREMADE MALL',
                 date: '2021.07. ~ 2022.03.31.',
                 summary: '네이처메이드 고도몰 운영 및 리뉴얼',
@@ -206,6 +223,7 @@ export default createStore({
             },
             {
                 id: 8,
+                category: '운영 | 유지보수 | 기업사이트',
                 title: 'PULMUONE 뉴스룸',
                 date: '2022.01.30.',
                 summary: '풀무원 뉴스룸 리뉴얼',
@@ -217,6 +235,7 @@ export default createStore({
             },
             {
                 id: 7,
+                category: '운영 | 유지보수 | 기업사이트',
                 title: 'WONIK IPS',
                 date: '2022.01.30.',
                 summary: '원익 IPS ESG 섹션 리뉴얼',
@@ -228,6 +247,7 @@ export default createStore({
             },
             {
                 id: 6,
+                category: '사이드 프로젝트',
                 title: 'weatherApi',
                 date: '',
                 summary: 'openweatherapi를 이용한 날씨 앱',
@@ -236,6 +256,7 @@ export default createStore({
             },
             // {
             //     id: 5,
+            //     category: '사이드 프로젝트',
             //     title: 'jsTimer',
             //     date: '',
             //     summary: 'javascript로 만든 timer 앱',
@@ -244,6 +265,7 @@ export default createStore({
             // },
             {
                 id: 4,
+                category: '사이드 프로젝트',
                 title: 'vanilla-todo',
                 date: '',
                 summary: 'javascript로 만든 todo 앱',
@@ -252,6 +274,7 @@ export default createStore({
             },
             {
                 id: 3,
+                category: '사이드 프로젝트',
                 title: 'randomly-choose-dayoff',
                 date: '',
                 summary: 'javascript로 만든 날짜 선택하기 앱',
@@ -260,6 +283,7 @@ export default createStore({
             },
             {
                 id: 2,
+                category: '사이드 프로젝트',
                 title: 'jsGame',
                 date: '',
                 summary: 'javascript로 만든 다양한 미니 게임',
@@ -268,6 +292,7 @@ export default createStore({
             },
             // {
             //     id: 1,
+            //     category: '사이드 프로젝트',
             //     title: 'BasicPaint',
             //     date: '',
             //     summary: 'html5 canvas를 이용한 간단한 그림판 앱',

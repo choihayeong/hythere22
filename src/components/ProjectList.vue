@@ -20,7 +20,6 @@ import { useStore } from "vuex";
 export default {
     setup () {
 		const store = useStore();
-
 		const workData = computed(() => store.state.workData);
 
 		return {

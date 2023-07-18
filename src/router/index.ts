@@ -28,7 +28,7 @@ const routes = [
 				path: '/',
 				name: 'home',
 				meta: {
-					title: 'hythere'
+					title: 'hythere!'
 				},
 				component: () => import('@/views/Home.vue')
 			},
@@ -40,21 +40,21 @@ const routes = [
 		component: DefaultLayout,
 		children: [
 			{
-				path: 'list_bdot',
-				name: 'ProjectList_Bdot',
+				path: 'list',
+				name: 'projects',
 				meta: {
-					title: 'hythere'
+					title: 'hythere!'
 				},
-				component: () => import('@/views/projects/ProjectsList_Bdot.vue')
+				component: () => import('@/views/projects/ProjectsList.vue')
 			},
-			{
-				path: 'list_etarae',
-				name: 'ProjectList_Etarae',
-				meta: {
-					title: 'hythere'
-				},
-				component: () => import('@/views/projects/ProjectsList_Etarae.vue')
-			},
+			// {
+			// 	path: 'list_etarae',
+			// 	name: 'ProjectList_Etarae',
+			// 	meta: {
+			// 		title: 'hythere'
+			// 	},
+			// 	component: () => import('@/views/projects/ProjectsList_Etarae.vue')
+			// },
 			/*{
 				path: ':id',
 				name: 'projectsview',
