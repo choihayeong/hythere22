@@ -26,7 +26,7 @@
                         </div>
                         <div class="timeline__panel">
                             <div class="timeline__heading">
-                                <span class="timeline__date">2021.07. ~ Current (1y 9m)</span>
+                                <span class="timeline__date">2021.07. ~ Current (about 2years)</span>
                                 <h3 class="timeline__title">
                                     B DOT CREATIVE
                                     <small class="timeline__group">사원 / 마크업개발팀</small>
@@ -45,7 +45,7 @@
                         </div>
                         <div class="timeline__panel">
                             <div class="timeline__heading">
-                                <span class="timeline__date">2021.04. ~ 2021.06. (2m)</span>
+                                <span class="timeline__date">2021.04. ~ 2021.06. (about 2months)</span>
                                 <h3 class="timeline__title">
                                     Etarae
                                     <small class="timeline__group">팀원 / 콘텐츠개발 1팀</small>
