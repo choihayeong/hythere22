@@ -128,12 +128,12 @@
             <div class="projects-inner">
                 <project-list></project-list>
                 <div class="projects-bg">
-                    <!-- <router-link :to="`/projects/list`">
+                    <router-link :to="`/projects/list`">
                     Detail
-                    </router-link> -->
-                    <a href="https://my.surfit.io/w/1146355103" target="_blank">
+                    </router-link>
+                    <!-- <a href="https://my.surfit.io/w/1146355103" target="_blank">
                         Detail
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </section>

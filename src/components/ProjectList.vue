@@ -20,7 +20,9 @@ import { useStore } from "vuex";
 export default {
     setup () {
 		const store = useStore();
-		const workData = computed(() => store.state.workData);
+		let workData = computed(() => {
+            return store.state.workData.filter((item) => item.exposure === 1);
+        });
 
 		return {
 			workData
