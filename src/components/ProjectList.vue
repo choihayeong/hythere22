@@ -22,7 +22,7 @@ export default {
 		const store = useStore();
 		let workData = computed(() => {
             return store.state.workData.filter((item) => item.exposure === 1);
-        });
+        })
 
 		return {
 			workData
