@@ -15,18 +15,35 @@
         </section>
         <!-- // -->
         <!-- CAREERS -->
-        <section class="main-section main-section--careers careers">
+        <section class="main-section main-section--careers careers" style="display:none;">
             <h2 class="main__title">Careers</h2>
             <!-- timeline -->
             <div class="row">
                 <ul class="timeline">
+                    <li>
+                        <div class="timeline__image" style="color:#fff;background-color:#000">
+                            C 
+                        </div>
+                        <div class="timeline__panel">
+                            <div class="timeline__heading">
+                                <span class="timeline__date">2023.08. ~ Current</span>
+                                <h3 class="timeline__title">
+                                    CTTD
+                                    <small class="timeline__group">사원 / Front-end Development Division</small>
+                                </h3>
+                            </div>
+                            <div class="timeline__description">
+                                - :)
+                            </div>
+                        </div>
+                    </li>
                     <li>
                         <div class="timeline__image" style="color:#1f1f1f;background-color:#fee101">
                             B 
                         </div>
                         <div class="timeline__panel">
                             <div class="timeline__heading">
-                                <span class="timeline__date">2021.07. ~ Current (about 2years)</span>
+                                <span class="timeline__date">2021.07. ~ 2023.08. (about 2years)</span>
                                 <h3 class="timeline__title">
                                     B DOT CREATIVE
                                     <small class="timeline__group">사원 / 마크업개발팀</small>

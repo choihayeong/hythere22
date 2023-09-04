@@ -6,7 +6,7 @@ export default createStore({
     state: {
         workData: [
             {
-                id: 24,
+                id: 25,
                 exposure: 1,
                 category: '구축 | 쇼핑몰 | 이커머스 | 고도몰 | 반응형 | mobile-first',
                 title: '유한양행 자사몰 (YHMALL)',
@@ -19,6 +19,22 @@ export default createStore({
                     '고도몰 솔루션을 이용한 쇼핑몰 구축 및 고도몰 스킨 커스터마이징',
                     '반응형 375px ~ 1920px 해상도 대응 (mobile-first로 적용)',
                     '퍼블리싱 참여도: 약 30%'
+                ]
+            },
+            {
+                id: 24,
+                exposure: 1,
+                category: '운영 | 유지보수 | 기업사이트',
+                title: '코오로이 ESG 페이지 추가',
+                start_date: '2023.02.13',
+                end_date: '2023.02.17',
+                open_date: '2023.06.30',
+                summary: '코오로이 ESG 페이지 추가',
+                link: 'http://www.korloy.com/ko/intro/esg_environment.do',
+                description: [
+                    '코오로이 ESG 페이지 추가',
+                    '375px ~ 1920px 해상도 대응',
+                    '퍼블리싱 참여도: 100%(퍼블리싱 1인)'
                 ]
             },
             {
