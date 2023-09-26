@@ -1,5 +1,5 @@
-import {createWebHistory, createRouter} from 'vue-router';
-import DefaultLayout from '@/layout/index.vue';
+import { createWebHistory, createRouter } from "vue-router";
+import DefaultLayout from "@/layout/index.vue";
 
 type Meta = {
 	title: string

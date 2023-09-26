@@ -8,29 +8,13 @@
 	</div>
 </template>
 
-<script>
-import { onBeforeMount, computed } from 'vue';
-import { useRouter, useRoute } from 'vue-router';
-import { TheHeader, TheFooter } from './components';
+<script setup>
+import { onBeforeMount, computed } from "vue";
+import { useRoute } from "vue-router";
+import { TheHeader, TheFooter } from "./components";
 
-export default ({
-	components: {
-		TheHeader,
-		TheFooter
-	},
-	setup() {
-		const router = useRouter(), route = useRoute();
-		const name = 'DefaultLayout';
-		const key = computed(() => {
-			return route.path;
-		})
+const route = useRoute();
+const key = computed(() => route.path);
 
-		onBeforeMount(() => document.title = route.meta.title);
-
-		return {
-			name,
-			key,
-		}
-	}
-})
+onBeforeMount(() => document.title = route.meta.title);
 </script>
