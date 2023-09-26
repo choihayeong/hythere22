@@ -101,7 +101,7 @@ const styles = computed(() => {
   return result;
 });
 
-const getDiffTimeLine = (start: string , end: string) => {
+const getDiffTimeLine = (start: string | Date , end: string | Date) => {
   const diff = +new Date(end) - +new Date(start);
 
   const SECOND_IN_MS = 1000;
