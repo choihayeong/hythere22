@@ -34,7 +34,7 @@ personal website for portfolio
 ### Component
 - 컴포넌트 주요 기능 정리
 
-#### <TimeLine />
+#### &lt;TimeLine /&gt;
 - 시작 날짜 ~ 종료 날짜 계산 기능 추가
 
 - typescript 날짜 계산시 new Date() 앞에 +를 붙여야함 ```+new Date()```
@@ -65,7 +65,7 @@ const styles = computed(() => {
 });
 ```
 
-#### <VisualStar />
+#### &lt;VisualStar /&gt;
 - 상단 별 생성 컴포넌트로 분리
 
 - style 속성에 속성 값을 추가할 때 typescript에서 ```CSSProperties``` 타입 추가
@@ -88,7 +88,7 @@ const starStyles = computed(() => {
 ```
 
 - 기존의 부모 컴포넌트 <VisualSection />에서 분리 후 ```appendChild()``` 적용 대신 ```v-for```를 이용
-  * <VisualSection />
+  * &lt;VisualSection /&gt;
   ```vue
   <visual-star v-for="i in 300" :key="i" :index="generateIndex(i)" ></visual-star>
   ```
