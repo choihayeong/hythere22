@@ -1,8 +1,17 @@
 <template>
-  <header ref="appHeader" id="header" class="header">
+  <header 
+    ref="appHeader" 
+    id="header" 
+    class="header"
+    :class="{ 'on' : scrollY > 200 }"
+  >
     <div class="header__inner">
-      <button type="button" class="header__button" @click="buttonClickEvent"></button>
-      <div class="header__contents">
+      <button 
+        type="button" 
+        class="header__button" 
+        @click="buttonClickEvent"
+      ></button>
+      <div ref="headerContents" class="header__contents">
         <nav class="header__links">
           <a href="https://github.com/choihayeong" target="_blank">github</a>
           <a href="https://my.surfit.io/w/1146355103" target="_blank">resume(surfit)</a>
@@ -25,25 +34,21 @@
 <script setup lang="ts">
 import { ref, onBeforeUnmount, onMounted } from "vue";
 
-const buttonClickEvent = (e: any) => {
-  const target = e.target, headerContents = document.querySelector('.header__contents');
-  // target.classList.toggle('active');
-  // headerContents.classList.toggle('active');
-};
+const scrollY = ref(0);
 
 const appHeader = ref(null);
+const headerContents = ref(null);
+
+const buttonClickEvent = (ele: any) => {
+  const target = ele.target;
+
+  // console.log(target);
+};
 
 const changeHeader = () => {
   let scTop = window.pageYOffset;
-  // const header = document.querySelector('#header');
 
-  // if (header !== null) {
-  //   if (scTop > 200) {
-  //     header.classList.add('on');
-  //   } else {
-  //     header.classList.remove('on');
-  //   }
-  // }
+  scrollY.value = scTop;
 }
 
 onMounted(() => {

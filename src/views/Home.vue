@@ -85,12 +85,12 @@
       <div class="projects-inner">
         <project-list></project-list>
         <div class="projects-bg">
-          <router-link :to="`/projects/list`">
+          <!-- <router-link :to="`/projects/list`">
           Detail
-          </router-link>
-          <!-- <a href="https://my.surfit.io/w/1146355103" target="_blank">
-              Detail
-          </a> -->
+          </router-link> -->
+          <a href="https://my.surfit.io/w/1146355103" target="_blank">
+            Detail
+          </a>
         </div>
       </div>
     </section>
@@ -110,8 +110,6 @@ const sizes = ref([1,1,2,3,4]);
 const randomPosition = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const generateStars = () => {
-  // const visual = document.querySelector(".visual");
-
   for (let i = 0; i < 300; i++) {
     const top = randomPosition(1,100);
     const left = randomPosition(1,100);
@@ -146,9 +144,7 @@ const generateStars = () => {
       div.classList.add('star6');
     }
 
-    // if (visual !== null) {
-    //   visual.appendChild(div);
-    // }
+    visual?.value.appendChild(div);
   }
 }
 
