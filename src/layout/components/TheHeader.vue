@@ -58,3 +58,73 @@ onBeforeUnmount(() => {
   window.removeEventListener("scroll", changeHeader);
 });
 </script>
+
+<style lang="scss" scoped>
+// header
+.header {
+  position:fixed;
+  left:30px;
+  bottom: 210px;
+  z-index: 50;
+  color:#fff;
+  // transition:all 0.4s ease-out;
+
+  &.on {
+    left:auto;
+    right:60px;
+    bottom:30px;
+    color:#1F2C37;
+    .header__links {
+      color:#5a5aff;
+    }
+    .header__button {
+      display:block;
+      &.active {
+        display:none;
+      }
+    }
+    .header__contents {
+      display:none;
+      &.active {
+        display:block;
+      }
+    }
+  }
+
+  &__inner {
+    padding:30px;
+    border-radius:10px;
+  }
+
+  &__button {
+    display:none;
+    width:60px;
+    height:60px;
+    background:url("@/assets/images/img_minesweeper.png") no-repeat;
+    border-radius:50%;
+    background-size:cover;
+  }
+
+  &__links {
+    display:flex;
+    gap:10px;
+    color:#FFF689;
+  }
+
+  &__info {
+    margin-top:30px;
+    & > li {
+      & ~ li {
+        margin-top:5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:769px) {
+  .header.on {
+    right: 0;
+    bottom: 20px;
+  }
+}
+</style>

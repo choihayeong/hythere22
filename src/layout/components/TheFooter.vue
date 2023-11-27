@@ -7,3 +7,15 @@
 		</div>
 	</footer>
 </template>
+
+<style lang="scss" scoped>
+// footer
+.footer {
+	&__wrap {
+		padding:30px 0;
+	}
+	&__copyright {
+		text-align:center;
+	}
+}
+</style>
