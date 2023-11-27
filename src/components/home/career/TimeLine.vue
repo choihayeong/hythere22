@@ -47,7 +47,7 @@ const allTimeLineData = reactive([
     grade: "사원",
     department: "Frontend Development",
     description: [
-      ":)",
+      "이커머스 플랫폼 구축 및 운영",
     ],
     identity_color: {
       font: "#fff",
@@ -89,16 +89,16 @@ const allTimeLineData = reactive([
 ]);
 
 const styles = computed(() => {
-  const result: StyleValue = [];
+  const results: StyleValue = [];
 
   allTimeLineData.filter((item, index) => {
-    result.push({
+    results.push({
       "color": item.identity_color.font,
       "background-color": item.identity_color.bg,
     });
   })
 
-  return result;
+  return results;
 });
 
 const getDiffTimeLine = (start: string | Date , end: string | Date) => {
@@ -124,18 +124,18 @@ const getDiffTimeLine = (start: string | Date , end: string | Date) => {
 };
 
 const getDurations = computed(() => {
-  const result: String[] = [];
+  const results: String[] = [];
   const TODAY = new Date().toDateString();
 
   allTimeLineData.filter((item, index) => {
     if (item.end_date) {
-      result.push(getDiffTimeLine(item.start_date, item.end_date));
+      results.push(getDiffTimeLine(item.start_date, item.end_date));
     } else {
-      result.push(getDiffTimeLine(item.start_date, TODAY));
+      results.push(getDiffTimeLine(item.start_date, TODAY));
     }
   })
 
-  return result;
+  return results;
 });
 </script>
 
@@ -246,6 +246,18 @@ const getDurations = computed(() => {
     font-size:16px;
     line-height:1.5;
   }
+}
+
+// animation
+@keyframes scale {
+	0% {
+		opacity:0.5;
+		transform:scale(1);
+	}
+	100% {
+		opacity:0.2;
+		transform:scale(1.2);
+	}
 }
 
 @media screen and (max-width:1440px) {

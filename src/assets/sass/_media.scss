@@ -1,26 +1,26 @@
 @charset "UTF-8";
+
 @media screen and (max-width:1440px) {
-    .row {padding:0 20px}
-    .hythere {font-size:6vw;}
-    .projects-inner {padding:0 20px;}
+  .row {
+    padding-inline: 20px;
+  }
 }
+
 @media screen and (max-width:1025px) {
-    .hythere {font-size:60px;}
-    .main-section {padding:70px 20px;}
-    .main__title {font-size:36px;}    
+  .main-section {
+    padding: 70px 20px;
+  }
+  .main__title {
+    font-size: 36px;
+  }
 }
+
 @media screen and (max-width:769px) {
-    .header.on {right:0;bottom:20px;}
-    .hythere {animation: none;padding: 0 20px;}
-    .hythere--stroke {padding-top:6vh;}
-    .main__title {font-size:28px;margin-bottom:40px;}
-    .main-section {padding-left:0;padding-right:0;}
-    .main-section__title {font-size:56px;}
-    .main-section--overview, 
-    .main-section--projects {padding-top:120px;padding-bottom:120px;}
-    .main-section--career {margin-top:120px;}
-    .strength-tag {flex-wrap:wrap;}
-    .strength-tag > li {font-size:16px;}
-    .strength__list {flex-wrap:nowrap;flex-direction:column;}
-    .projects-list {grid-template-columns: repeat(2, 1fr);}
+  .main-section {
+    padding-inline: 0;
+  }
+  .main__title {
+    font-size: 28px;
+    margin-block-end: 40px;
+  }
 }
