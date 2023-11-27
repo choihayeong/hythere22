@@ -2,13 +2,32 @@
 
 personal website for portfolio with deploying via vercel, vue3, typescript and vite
 
-## 📁 Directory 구조
+## vite 설치 (https://vitejs.dev/guide/)
 
-### Prettier 설치
+```bash
+npm create vite@latest
+```
+
+```bash
+Ok to proceed? (y) y
+√ Project name: ... whatever
+√ Select a framework: » Vue
+√ Select a variant: » TypeScript
+```
+
+### 설치 후 개발서버 실행
+
+```bash
+cd whatever
+npm install
+npm run dev
+```
+
+## Prettier 설치
 
 - [Prettier 설치](https://prettier.io/docs/en/install.html)
 
-### tsconfig.json
+## tsconfig.json
 
 - `"compilerOptions"` 속성 중 `"baseUrl": "./",`, `"paths: { "@/*":["./src/*"] }"`을 추가해줘야 컴포넌트 임포트시 오류가 안남
 
@@ -45,11 +64,55 @@ personal website for portfolio with deploying via vercel, vue3, typescript and v
 }
 ```
 
-### Components
+## package.json (의존 패키지 설치)
+```json
+  "dependencies": {
+    "aos": "^2.3.4",
+    "sass": "^1.51.0",
+    "vue": "^3.2.25", // >> "^3.3.8"
+    "vue-router": "^4.0.14",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/node": "^17.0.33",
+    "@vitejs/plugin-vue": "^2.3.3", // >> "^4.5.0",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "nodemon": "^2.0.16",
+    "prettier": "3.0.0",
+    "sass-loader": "^12.6.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.5.4", // >> "^5.2.2",
+    "vite": "^2.9.9", // >> "^5.0.0",
+    "vue-tsc": "^0.34.7" // >> "^1.8.22"
+  }
+```
+
+## 📁 Directory 구조
+```
+\ (root)
+└ src
+  └ assets        << including fonts, images ....
+    └ stylesheets << such as scss....
+  └ components
+  └ layout
+    └ components  << TheHeader.vue / TheFooter.vue 
+  └ router
+    index.ts
+  └ store
+    index.ts
+  └ views
+  App.vue
+  main.ts
+```
+
+## Components
 
 컴포넌트 주요 기능 정리
 
-#### &lt;TimeLine /&gt;
+### &lt;TimeLine /&gt;
 
 - 시작 날짜 ~ 종료 날짜 계산 기능 추가
 
@@ -84,7 +147,7 @@ const styles = computed(() => {
 });
 ```
 
-#### &lt;VisualStar /&gt;
+### &lt;VisualStar /&gt;
 
 - 상단 별 생성 컴포넌트로 분리
 
@@ -122,10 +185,10 @@ const starStyles = computed(() => {
   ></visual-star>
   ```
 
-#### /projects/list
+### /projects/list
 
 - 카테고리 필터 기능 추가 예정
 
-##### 참고링크
+#### 참고링크
 
 - [CSSProperties Type](https://stackoverflow.com/questions/63081579/vue-typescript-how-to-find-right-type-of-object-used-for-style)
