@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 8080",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
@@ -21,6 +21,7 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
+    "prettier": "3.0.0",
     "nodemon": "^2.0.16",
     "sass-loader": "^12.6.0",
     "ts-node": "^10.7.0",
