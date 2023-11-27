@@ -1,7 +1,7 @@
 # hythere
 personal website for portfolio
 
-## 📁 Directory
+## 📁 Directory 구조
 
 ### tsconfig.json
 - ```"compilerOptions"``` 속성 중 ```"baseUrl": "./",```, ```"paths: { "@/*":["./src/*"] }"```을 추가해줘야 컴포넌트 임포트시 오류가 안남
@@ -69,6 +69,9 @@ const styles = computed(() => {
 - 상단 별 생성 컴포넌트로 분리
 
 - style 속성에 속성 값을 추가할 때 typescript에서 ```CSSProperties``` 타입 추가
+```html
+<div class="star" :style="starStyles" :class="`star--${props.index}`"></div>
+```
 ```typescript
 // ...
 const starStyles = computed(() => {
