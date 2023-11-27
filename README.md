@@ -1,8 +1,12 @@
 # hythere
 
-personal website for portfolio
+personal website for portfolio with deploying via vercel, vue3, typescript and vite
 
 ## 📁 Directory 구조
+
+### Prettier 설치
+
+- [Prettier 설치](https://prettier.io/docs/en/install.html)
 
 ### tsconfig.json
 
@@ -41,9 +45,9 @@ personal website for portfolio
 }
 ```
 
-### Component
+### Components
 
-- 컴포넌트 주요 기능 정리
+컴포넌트 주요 기능 정리
 
 #### &lt;TimeLine /&gt;
 
@@ -108,7 +112,7 @@ const starStyles = computed(() => {
 });
 ```
 
-- 기존의 부모 컴포넌트 <VisualSection />에서 분리 후 `appendChild()` 적용 대신 `v-for`를 이용
+- 기존의 부모 컴포넌트 &lt;VisualSection /&gt;에서 분리 후 `appendChild()` 적용 대신 `v-for`를 이용
   - &lt;VisualSection /&gt;
   ```vue
   <visual-star
