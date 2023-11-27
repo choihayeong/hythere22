@@ -2,6 +2,6 @@
 
 // transition default
 @mixin transition($property: all, $duration: 0.3s, $easing: ease-out) {
-    -webkit-transition:$property $duration $easing;
-    transition:$property $duration $easing;
+  -webkit-transition: $property $duration $easing;
+  transition: $property $duration $easing;
 }

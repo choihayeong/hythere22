@@ -7,9 +7,7 @@
         <!-- <router-link :to="`/projects/list`">
         Detail
         </router-link> -->
-        <a href="https://my.surfit.io/w/1146355103" target="_blank">
-          Detail
-        </a>
+        <a href="https://my.surfit.io/w/1146355103" target="_blank"> Detail </a>
       </div>
     </div>
   </section>
@@ -17,7 +15,6 @@
 
 <script setup lang="ts">
 import { ProjectList } from "@/components";
-
 </script>
 
 <style lang="scss" scoped>
@@ -31,20 +28,20 @@ import { ProjectList } from "@/components";
   font-size: 12vw;
   text-transform: uppercase;
   font-weight: bold;
-  
+
   a {
-    display:block;
+    display: block;
     opacity: 0.2;
   }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   .projects-inner {
     padding-inline: 20px;
   }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width: 769px) {
   .main-section--projects {
     padding-block: 120px;
   }

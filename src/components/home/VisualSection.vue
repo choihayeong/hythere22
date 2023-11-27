@@ -1,33 +1,36 @@
 <template>
   <section ref="visual" class="main-section main-section--visual visual">
-    <div class = "light"></div>
+    <div class="light"></div>
     <div class="air air--01"></div>
     <div class="air air--02"></div>
     <div class="air air--03"></div>
     <div class="air air--04"></div>
     <h1 class="hythere">Hythere!</h1>
     <div class="hythere hythere--stroke">
-      choi <br>
+      choi <br />
       hayeong
     </div>
 
-    <visual-star v-for="i in 300" :key="i" :index="generateIndex(i)" ></visual-star>
+    <visual-star
+      v-for="i in 300"
+      :key="i"
+      :index="generateIndex(i)"
+    ></visual-star>
   </section>
 </template>
 
 <script setup lang="ts">
 import { VisualStar } from "@/components";
 
-type GroupIndex = (idx : number) => number | undefined;
+type GroupIndex = (idx: number) => number | undefined;
 
-const generateIndex : GroupIndex = (idx) => {
+const generateIndex: GroupIndex = (idx) => {
   for (let i = 0; i < 6; i++) {
-    if (idx <= 50 * (i+1) && idx > 50 * i) {
-
-      return i+1;
+    if (idx <= 50 * (i + 1) && idx > 50 * i) {
+      return i + 1;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -70,12 +73,13 @@ const generateIndex : GroupIndex = (idx) => {
 }
 
 .light {
-  position:absolute;
+  position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   height: 100%;
   width: 100%;
-  &:after, &:before {
+  &:after,
+  &:before {
     content: "";
     display: block;
     position: absolute;
@@ -85,89 +89,99 @@ const generateIndex : GroupIndex = (idx) => {
     height: 120%;
     top: 40%;
     left: -25%;
-    background: radial-gradient(48.58% 48.58% at 49.96% 59.07%, #5a5aff 0%, rgba(142, 133, 190, 0.4) 43.23%, rgba(59, 61, 70, 0) 100%);
+    background: radial-gradient(
+      48.58% 48.58% at 49.96% 59.07%,
+      #5a5aff 0%,
+      rgba(142, 133, 190, 0.4) 43.23%,
+      rgba(59, 61, 70, 0) 100%
+    );
   }
   &:after {
     width: 120%;
     height: 100%;
     top: 65%;
     left: 25%;
-    background: radial-gradient(48.58% 48.58% at 49.96% 59.07%, #FFF689 0%, rgba(180, 174, 113, 0.45) 38.02%, rgba(59, 61, 70, 0) 100%);
+    background: radial-gradient(
+      48.58% 48.58% at 49.96% 59.07%,
+      #fff689 0%,
+      rgba(180, 174, 113, 0.45) 38.02%,
+      rgba(59, 61, 70, 0) 100%
+    );
   }
 }
 
 .hythere {
-  color:#fff;
-  font-size:10vw;
-  font-weight:bold;
-  text-transform:uppercase;
-  letter-spacing:.02em;
+  color: #fff;
+  font-size: 10vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   animation: cloud 3s ease-out 0.3s infinite alternate;
   &--stroke {
-    color:transparent;
-    text-align:end;
-    -webkit-text-stroke:1px #fff;
-    animation:none;
+    color: transparent;
+    text-align: end;
+    -webkit-text-stroke: 1px #fff;
+    animation: none;
     // animation: cloud02 3s ease-out 0.3s infinite alternate;
   }
 }
 
 // animation
-@keyframes wave{
-  0%{
-    background-position-x: 0px; 
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
   }
-  100%{
-    background-position-x: 1000px; 
+  100% {
+    background-position-x: 1000px;
   }
 }
 
-@keyframes wave2{
-  0%{
-    background-position-x: 0px; 
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
   }
-  100%{
-    background-position-x: -1000px; 
+  100% {
+    background-position-x: -1000px;
   }
 }
 
 @keyframes cloud {
   0% {
-    transform:translateX(20px);
+    transform: translateX(20px);
   }
   50% {
-    transform:translateX(0px);
+    transform: translateX(0px);
   }
   100% {
-    transform:translateX(20px);
+    transform: translateX(20px);
   }
 }
 
 @keyframes cloud02 {
   0% {
-    transform:translateX(-20px);
+    transform: translateX(-20px);
   }
   50% {
-    transform:translateX(0px);
+    transform: translateX(0px);
   }
   100% {
-    transform:translateX(-20px);
+    transform: translateX(-20px);
   }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   .hythere {
     font-size: 6vw;
   }
 }
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width: 1025px) {
   .hythere {
     font-size: 60px;
   }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width: 769px) {
   .hythere {
     animation: none;
     padding-inline: 20px;
