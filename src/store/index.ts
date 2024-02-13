@@ -6,6 +6,38 @@ export default createStore({
   state: {
     workData: [
       {
+        id: 27,
+        exposure: 0,
+        category: "구축 | 쇼핑몰 | 이커머스",
+        title: "하프클럽 쇼핑몰 구축",
+        start_date: "2023.12.04",
+        end_date: "",
+        open_date: "",
+        summary: "하프클럽 모바일 홈페이지 리뉴얼",
+        link: "",
+        description: [
+          "SPA(Nuxt) 작업환경 쇼핑몰 구축",
+          "모바일 360px ~ 500px 대응",
+          "참여도: 약 20% (총6명)",
+        ],
+      },
+      {
+        id: 26,
+        exposure: 1,
+        category: "구축 | 쇼핑몰 | 이커머스",
+        title: "보리보리 쇼핑몰 리뉴얼",
+        start_date: "2023.08.22",
+        end_date: "2023.10.24",
+        open_date: "2023.12.14",
+        summary: "보리보리 모바일 홈페이지 리뉴얼",
+        link: "https://m.boribori.co.kr/home",
+        description: [
+          "SPA(Nuxt) 작업환경 쇼핑몰 구축",
+          "모바일 360px ~ 500px 대응",
+          "기여도: 약 30% (총4명)",
+        ],
+      },
+      {
         id: 25,
         exposure: 1,
         category: "구축 | 쇼핑몰 | 이커머스 | 고도몰 | 반응형 | mobile-first",
