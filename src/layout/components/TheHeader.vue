@@ -1,28 +1,34 @@
 <template>
-  <header 
-    ref="appHeader" 
-    id="header" 
+  <header
+    ref="appHeader"
+    id="header"
     class="header"
-    :class="{ 'on' : scrollY > 200 }"
+    :class="{ on: scrollY > 200 }"
   >
     <div class="header__inner">
-      <button 
-        type="button" 
-        class="header__button" 
+      <button
+        type="button"
+        class="header__button"
         @click="buttonClickEvent"
       ></button>
       <div ref="headerContents" class="header__contents">
         <nav class="header__links">
           <a href="https://github.com/choihayeong" target="_blank">github</a>
-          <a href="https://my.surfit.io/w/1146355103" target="_blank">resume(surfit)</a>
-          <a href="https://www.linkedin.com/in/hayeong-choi-85b7b2183/" target="_blank">linkedin</a>
+          <a href="https://my.surfit.io/w/1146355103" target="_blank"
+            >resume(surfit)</a
+          >
+          <a
+            href="https://www.linkedin.com/in/hayeong-choi-85b7b2183/"
+            target="_blank"
+            >linkedin</a
+          >
         </nav>
         <ul class="header__info">
           <li>
             <span>FE Developer / UI Developer</span>
           </li>
           <li>
-            <span>Email:</span> 
+            <span>Email:</span>
             hychoi318@gmail.com
           </li>
         </ul>
@@ -49,7 +55,7 @@ const changeHeader = () => {
   let scTop = window.pageYOffset;
 
   scrollY.value = scTop;
-}
+};
 
 onMounted(() => {
   window.addEventListener("scroll", changeHeader);
@@ -62,66 +68,66 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 // header
 .header {
-  position:fixed;
-  left:30px;
+  position: fixed;
+  left: 30px;
   bottom: 210px;
   z-index: 50;
-  color:#fff;
+  color: #fff;
   // transition:all 0.4s ease-out;
 
   &.on {
-    left:auto;
-    right:60px;
-    bottom:30px;
-    color:#1F2C37;
+    left: auto;
+    right: 60px;
+    bottom: 30px;
+    color: #1f2c37;
     .header__links {
-      color:#5a5aff;
+      color: #5a5aff;
     }
     .header__button {
-      display:block;
+      display: block;
       &.active {
-        display:none;
+        display: none;
       }
     }
     .header__contents {
-      display:none;
+      display: none;
       &.active {
-        display:block;
+        display: block;
       }
     }
   }
 
   &__inner {
-    padding:30px;
-    border-radius:10px;
+    padding: 30px;
+    border-radius: 10px;
   }
 
   &__button {
-    display:none;
-    width:60px;
-    height:60px;
-    background:url("@/assets/images/img_minesweeper.png") no-repeat;
-    border-radius:50%;
-    background-size:cover;
+    display: none;
+    width: 60px;
+    height: 60px;
+    background: url("@/assets/images/img_minesweeper.png") no-repeat;
+    border-radius: 50%;
+    background-size: cover;
   }
 
   &__links {
-    display:flex;
-    gap:10px;
-    color:#FFF689;
+    display: flex;
+    gap: 10px;
+    color: #fff689;
   }
 
   &__info {
-    margin-top:30px;
+    margin-top: 30px;
     & > li {
       & ~ li {
-        margin-top:5px;
+        margin-top: 5px;
       }
     }
   }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width: 769px) {
   .header.on {
     right: 0;
     bottom: 20px;

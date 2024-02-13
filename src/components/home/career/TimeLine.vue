@@ -3,27 +3,37 @@
     <!-- timeline items -->
     <li v-for="(item, index) in allTimeLineData" :key="index">
       <div class="timeline__image" :style="styles[index]">
-        {{ item.company.slice(0, 1).toUpperCase() }} 
+        {{ item.company.slice(0, 1).toUpperCase() }}
       </div>
       <div class="timeline__panel">
         <div class="timeline__heading">
-          <span class="timeline__date">{{ item.start_date }} ~ {{ item.end_date ? item.end_date : "current" }} ({{ getDurations[index] }})</span>
+          <span class="timeline__date"
+            >{{ item.start_date }} ~
+            {{ item.end_date ? item.end_date : "current" }} ({{
+              getDurations[index]
+            }})</span
+          >
           <h3 class="timeline__title">
             {{ item.company }}
-            <small class="timeline__group">{{ item.grade }} / {{ item.department }}</small>
+            <small class="timeline__group"
+              >{{ item.grade }} / {{ item.department }}</small
+            >
           </h3>
         </div>
         <div class="timeline__description">
-          <p v-for="(desc, index) in item.description" :key="index">{{ desc }}</p>
+          <p v-for="(desc, index) in item.description" :key="index">
+            {{ desc }}
+          </p>
         </div>
       </div>
     </li>
     <!-- // -->
     <li>
-      <div class="timeline__image" style="color:#1F2C37;background-color:#BFDBA7">
-        <a href="https://github.com/choihayeong" target="_blank">
-          GitHub
-        </a>
+      <div
+        class="timeline__image"
+        style="color: #1f2c37; background-color: #bfdba7"
+      >
+        <a href="https://github.com/choihayeong" target="_blank"> GitHub </a>
       </div>
     </li>
   </ul>
@@ -46,9 +56,7 @@ const allTimeLineData = reactive([
     end_date: undefined,
     grade: "사원",
     department: "Frontend Development",
-    description: [
-      "이커머스 플랫폼 구축 및 운영",
-    ],
+    description: ["이커머스 플랫폼 구축 및 운영"],
     identity_color: {
       font: "#fff",
       bg: "#000",
@@ -93,15 +101,15 @@ const styles = computed(() => {
 
   allTimeLineData.filter((item, index) => {
     results.push({
-      "color": item.identity_color.font,
+      color: item.identity_color.font,
       "background-color": item.identity_color.bg,
     });
-  })
+  });
 
   return results;
 });
 
-const getDiffTimeLine = (start: string | Date , end: string | Date) => {
+const getDiffTimeLine = (start: string | Date, end: string | Date) => {
   const diff = +new Date(end) - +new Date(start);
 
   const SECOND_IN_MS = 1000;
@@ -115,7 +123,7 @@ const getDiffTimeLine = (start: string | Date , end: string | Date) => {
   const yearLeft = Math.floor(DAYS / 365);
 
   if (yearLeft !== 0) {
-    const monthLeft = allMonthLeft - (12 * yearLeft);
+    const monthLeft = allMonthLeft - 12 * yearLeft;
 
     return `${yearLeft}년 ${monthLeft}개월`;
   } else {
@@ -133,7 +141,7 @@ const getDurations = computed(() => {
     } else {
       results.push(getDiffTimeLine(item.start_date, TODAY));
     }
-  })
+  });
 
   return results;
 });
@@ -152,7 +160,7 @@ const getDurations = computed(() => {
     left: 50%;
     width: 2px;
     margin-left: -1.5px;
-    content:'';
+    content: "";
     background-color: #e9ecef;
   }
 
@@ -160,22 +168,23 @@ const getDurations = computed(() => {
     position: relative;
     min-height: 170px;
     margin-bottom: 100px;
-    &::before, &::after {
+    &::before,
+    &::after {
       display: table;
-      content:'';
+      content: "";
     }
     &::after {
-      clear:both;
+      clear: both;
     }
     &:nth-child(2n) {
       .timeline__panel {
         text-align: left;
-        margin-left:auto;
-        padding:0 100px 0 20px;
+        margin-left: auto;
+        padding: 0 100px 0 20px;
       }
     }
     &:last-child {
-      margin-bottom:0;
+      margin-bottom: 0;
     }
   }
 
@@ -192,7 +201,7 @@ const getDurations = computed(() => {
     border-radius: 100%;
     background-color: #ccc;
     transition: all 0.3s;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 38px;
@@ -213,7 +222,7 @@ const getDurations = computed(() => {
 
   &__panel {
     width: calc(50% - 85px);
-    padding:0 20px 0 100px;
+    padding: 0 20px 0 100px;
     text-align: right;
   }
   &__heading {
@@ -229,8 +238,8 @@ const getDurations = computed(() => {
   }
 
   &__group {
-    display:block;
-    font-size:16px;
+    display: block;
+    font-size: 16px;
     font-weight: 300;
   }
 
@@ -243,24 +252,24 @@ const getDurations = computed(() => {
 
   &__description {
     color: #6c757d;
-    font-size:16px;
-    line-height:1.5;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
 // animation
 @keyframes scale {
-	0% {
-		opacity:0.5;
-		transform:scale(1);
-	}
-	100% {
-		opacity:0.2;
-		transform:scale(1.2);
-	}
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   .timeline {
     &__panel {
       padding: 0 20px 0 0;
@@ -274,7 +283,7 @@ const getDurations = computed(() => {
   }
 }
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width: 1025px) {
   .timeline {
     & > li {
       min-height: 150px;
@@ -293,7 +302,7 @@ const getDurations = computed(() => {
   }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width: 769px) {
   .timeline {
     &::before {
       left: 40px;
@@ -311,7 +320,7 @@ const getDurations = computed(() => {
       font-size: 18px;
     }
 
-    &__panel, 
+    &__panel,
     & > li:nth-child(2n) .timeline__panel {
       width: 100%;
       padding: 0 0 0 100px;

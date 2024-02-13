@@ -15,9 +15,16 @@
     "allowJs": true,
     "baseUrl": "./",
     "paths": {
-      "@/*":["./src/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/main.js", "src/main.js"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/main.js",
+    "src/main.js"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

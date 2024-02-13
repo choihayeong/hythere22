@@ -19,8 +19,9 @@ import { useStore } from "vuex";
 
 const store = useStore();
 
-let workData = computed(() => store.state.workData.filter((item : any) => item.exposure === 1));
-
+let workData = computed(() =>
+  store.state.workData.filter((item: any) => item.exposure === 1),
+);
 </script>
 
 <style lang="scss">
@@ -29,51 +30,51 @@ let workData = computed(() => store.state.workData.filter((item : any) => item.e
 
 // projects
 .projects-list {
-  display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 
   > li {
-    position:relative;
-    padding:15px 0;
-    cursor:pointer;
+    position: relative;
+    padding: 15px 0;
+    cursor: pointer;
     @include transition();
 
     &::after {
-      content:'';
-      position:absolute;
-      bottom:0;
-      left:50%;
-      width:0;
-      height:1px;
-      background-color:$pointColor2;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 1px;
+      background-color: $pointColor2;
       @include transition();
     }
 
     &:hover {
       &::after {
-        left:0;
-        width:100%;
+        left: 0;
+        width: 100%;
       }
 
       .projects-list__title {
-        color:$pointColor;
+        color: $pointColor;
       }
     }
   }
 
   &__title {
-    display:block;
-    margin-bottom:8px;
-    font-weight:500;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
   }
 
   &__summary {
-    display:block;
+    display: block;
   }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width: 769px) {
   .projects-list {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -12,19 +12,20 @@ const props = defineProps({
   },
 });
 
-const sizes = ref([1,1,2,3,4]);
+const sizes = ref([1, 1, 2, 3, 4]);
 
 //get random position between 1 - 100;
-type RandomCoord = (min : number, max : number) => number;
-const randomPosition : RandomCoord = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+type RandomCoord = (min: number, max: number) => number;
+const randomPosition: RandomCoord = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1)) + min;
 
 const starStyles = computed(() => {
-  const top = randomPosition(1,100);
-  const left = randomPosition(1,100);
+  const top = randomPosition(1, 100);
+  const left = randomPosition(1, 100);
   const random = Math.floor(Math.random() * sizes.value.length);
   const randomSize = sizes.value[random];
 
-  const result : CSSProperties = {
+  const result: CSSProperties = {
     "--star-left": `${left}%`,
     "--star-top": `${top}%`,
     "--star-size": `${randomSize}px`,
@@ -32,7 +33,6 @@ const starStyles = computed(() => {
 
   return result;
 });
-
 </script>
 
 <style lang="scss" scoped>

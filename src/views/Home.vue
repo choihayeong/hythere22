@@ -1,9 +1,5 @@
 <template>
-  <main 
-    ref="main" 
-    id="main" 
-    class="main"
-  >
+  <main ref="main" id="main" class="main">
     <!-- VISUAL -->
     <visual-section></visual-section>
     <!-- // -->
@@ -24,7 +20,12 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from "vue";
-import { VisualSection, CareerSection, StrengthSection, ProjectsSection } from "@/components";
+import {
+  VisualSection,
+  CareerSection,
+  StrengthSection,
+  ProjectsSection,
+} from "@/components";
 
 // const main = ref(null);
 // const strengthContent = ref(null);
@@ -34,20 +35,20 @@ const scrollY = ref(0);
 const changeBgColor = () => {
   let scTop = window.pageYOffset;
 
-  const main = document.querySelector('#main') as HTMLElement;
-  const strengthContent = document.querySelector('.strength') as HTMLElement;
+  const main = document.querySelector("#main") as HTMLElement;
+  const strengthContent = document.querySelector(".strength") as HTMLElement;
 
   if (strengthContent !== null) {
-    if (scTop > (strengthContent.offsetTop - 150)) {
-      main.classList.add('black');
+    if (scTop > strengthContent.offsetTop - 150) {
+      main.classList.add("black");
     } else {
-      main.classList.remove('black');
+      main.classList.remove("black");
     }
   }
-}
+};
 
 onMounted(() => {
-  window.addEventListener('scroll', changeBgColor);
+  window.addEventListener("scroll", changeBgColor);
 });
 onBeforeUnmount(() => {
   window.addEventListener("scroll", changeBgColor);

@@ -11,9 +11,6 @@
 
 <script setup lang="ts">
 import { TimeLine } from "@/components";
-
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

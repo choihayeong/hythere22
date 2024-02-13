@@ -1,19 +1,19 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
-import AOS from 'aos';
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import AOS from "aos";
 
-import 'aos/dist/aos.css';
-import './assets/sass/common.scss';
+import "aos/dist/aos.css";
+import "./assets/sass/common.scss";
 
 const app = createApp(App);
 
-// app.AOS = new AOS.init({ 
+// app.AOS = new AOS.init({
 //     "once": false,
 // });
 
 app.use(store);
 app.use(router);
 
-app.mount('#app');
+app.mount("#app");

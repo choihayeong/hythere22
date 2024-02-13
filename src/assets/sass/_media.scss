@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   .row {
     padding-inline: 20px;
   }
 }
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width: 1025px) {
   .main-section {
     padding: 70px 20px;
   }
@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width: 769px) {
   .main-section {
     padding-inline: 0;
   }

@@ -5,168 +5,180 @@
 
 // common
 body {
-  font-family:$fontFamily;
-  font-size:18px;
-  line-height:1.25;
-  font-weight:400;
+  font-family: $fontFamily;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
 
   &::-webkit-scrollbar {
-    width:4px;
+    width: 4px;
   }
 
   &::-webkit-scrollbar-thumb {
-    height:30%;
-    background:#333;
+    height: 30%;
+    background: #333;
   }
-  
+
   &::-webkit-scrollbar-track {
-    background:rgba(33, 122, 244, .1);
+    background: rgba(33, 122, 244, 0.1);
   }
 }
 
 ::selection {
-  color:#fff;
-  background-color:$black;
+  color: #fff;
+  background-color: $black;
 }
 
 .row {
-  max-width:1440px;
-  margin:0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .table {
-  table-layout:fixed;
-  width:100%;
-  th, td {
-    padding:10px;
-    border-bottom:1px solid $white;
-    text-align:left;
-    vertical-align:middle;
+  table-layout: fixed;
+  width: 100%;
+  th,
+  td {
+    padding: 10px;
+    border-bottom: 1px solid $white;
+    text-align: left;
+    vertical-align: middle;
   }
   thead {
-    th {border-bottom:2px solid $white}
+    th {
+      border-bottom: 2px solid $white;
+    }
   }
   &--striped {
     tr:nth-child(2n) {
-      th, td {background-color:$pointColor2}
+      th,
+      td {
+        background-color: $pointColor2;
+      }
     }
   }
   &--hover {
     tr:hover {
-      td {background-color:rgba(255,255,255,0.25)}
+      td {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
     }
   }
 }
 
 // main (common)
 .main {
-  color:$black;
-  transition-property:background, color;
-  transition-duration:0.4s;
-  transition-timing-function:ease-out;
+  color: $black;
+  transition-property: background, color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
 
   &.black {
-    background-color:$black;
-    color:#fff;
+    background-color: $black;
+    color: #fff;
 
     .header {
-      color:#fff;
+      color: #fff;
 
       &.on {
         .header__links {
-          color:#FFF689;
+          color: #fff689;
         }
       }
     }
 
     .strength__tag > li {
-      border-color:#fff;
+      border-color: #fff;
     }
     .strength__list > li {
-      border-color:#FFF689;
+      border-color: #fff689;
     }
     .strength__title {
-      background-color:#1F2C37;
-      border-color:#FFF689;
+      background-color: #1f2c37;
+      border-color: #fff689;
     }
   }
 
   &__title {
-    margin-bottom:60px;
-    font-size:48px;
-    font-weight:600;
-    text-align:center;
-    text-transform:uppercase;
+    margin-bottom: 60px;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
 .main-section {
-  padding:160px 60px;
+  padding: 160px 60px;
 
   &--visual {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #1F2C37;
-    background:linear-gradient(to bottom, #1F2C37 0%, #fff 100%);
+    background: #1f2c37;
+    background: linear-gradient(to bottom, #1f2c37 0%, #fff 100%);
     overflow: hidden;
   }
 
   &__links {
-    display:flex;
-    gap:15px;
+    display: flex;
+    gap: 15px;
 
     > a {
-      color:$pointColor;
+      color: $pointColor;
       @include transition();
 
       &:hover {
-        color:$pointColor2;
-        text-decoration:underline;
-        text-underline-offset:3px;
+        color: $pointColor2;
+        text-decoration: underline;
+        text-underline-offset: 3px;
       }
     }
   }
 
   &__info {
-    margin-top:60px;
+    margin-top: 60px;
 
     > li {
       ~ li {
-        margin-top:15px;
+        margin-top: 15px;
       }
       > span {
-        font-weight:700;
+        font-weight: 700;
       }
     }
   }
-  
+
   &--projects {
-    text-align:center;
+    text-align: center;
   }
 }
 
 // sub
 .contents {
-  padding:120px 0;
+  padding: 120px 0;
 }
 
 // projects
 .projects {
-  margin-top:60px;
+  margin-top: 60px;
   &__list {
-    margin-top:30px;
+    margin-top: 30px;
     table {
       th {
-        color:$black;
-        background-color:$pointColor;
-        text-align:center;
-        font-weight:bold;
+        color: $black;
+        background-color: $pointColor;
+        text-align: center;
+        font-weight: bold;
       }
       td {
-        text-align:center;
-        &:nth-child(4) {text-align:left;}
-        > a {display:block;}
+        text-align: center;
+        &:nth-child(4) {
+          text-align: left;
+        }
+        > a {
+          display: block;
+        }
       }
     }
   }
@@ -174,27 +186,27 @@ body {
 
 .work-info {
   &__name {
-    font-size:24px;
-    font-weight:bold;
+    font-size: 24px;
+    font-weight: bold;
   }
   &__period {
-    margin-left:8px;
-    font-size:18px;
-    font-weight:300;
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: 300;
   }
   &__position {
-    padding:15px 0;
+    padding: 15px 0;
   }
 }
 
 .section {
-  padding:100px 0;
+  padding: 100px 0;
   &__title {
-    margin-bottom:60px;
-    font-size:60px;
-    font-weight:600;
-    text-align:center;
-    text-transform:uppercase;
+    margin-bottom: 60px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
