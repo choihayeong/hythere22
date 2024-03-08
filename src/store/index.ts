@@ -11,7 +11,7 @@ export default createStore({
         category: "구축 | 쇼핑몰 | 이커머스",
         title: "하프클럽 쇼핑몰 구축",
         start_date: "2023.12.04",
-        end_date: "",
+        end_date: "2023.12.",
         open_date: "",
         summary: "하프클럽 모바일 홈페이지 리뉴얼",
         link: "",
@@ -284,7 +284,7 @@ export default createStore({
         end_date: "2021.11.19",
         open_date: "2021.11.19",
         summary: "폴메이드 고도몰 구축 및 운영",
-        link: "https://www.paulmademall.com/",
+        link: "#",
         description: [
           "고도몰 솔루션을 이용한 쇼핑몰 구축 및 고도몰 스킨 커스터마이징",
           "인스타 api 연동",
