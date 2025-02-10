@@ -56,7 +56,11 @@ const allTimeLineData = reactive([
     end_date: undefined,
     grade: "사원",
     department: "Frontend Development",
-    description: ["이커머스 플랫폼 구축 및 운영"],
+    description: [
+      "이커머스 플랫폼 구축 및 운영",
+      "vue.js 프레임 워크를 이용한 SPA 컴포넌트 개발",
+      "기술스택: vue.js, scss, javascript(ES6), jQuery, html5/css3",
+    ],
     identity_color: {
       font: "#fff",
       bg: "#000",
@@ -78,22 +82,22 @@ const allTimeLineData = reactive([
       bg: "#fee101",
     },
   },
-  {
-    company: "ETARAE",
-    start_date: "2021.04.12.",
-    end_date: "2021.06.30",
-    grade: "팀원",
-    department: "콘텐츠개발팀",
-    description: [
-      "교과서(다락원) 전자저작물 이러닝 제작 프로젝트 참여(프로토 제작 외)",
-      "vue.js 프레임 워크를 이용한 SPA 퍼블리싱 및 프론트 개발",
-      "기술스택: jQuery, html5/css3",
-    ],
-    identity_color: {
-      font: "#fff",
-      bg: "#10B4B1",
-    },
-  },
+  // {
+  //   company: "ETARAE",
+  //   start_date: "2021.04.12.",
+  //   end_date: "2021.06.30",
+  //   grade: "팀원",
+  //   department: "콘텐츠개발팀",
+  //   description: [
+  //     "교과서(다락원) 전자저작물 이러닝 제작 프로젝트 참여(프로토 제작 외)",
+  //     "vue.js 프레임 워크를 이용한 SPA 퍼블리싱 및 프론트 개발",
+  //     "기술스택: jQuery, html5/css3",
+  //   ],
+  //   identity_color: {
+  //     font: "#fff",
+  //     bg: "#10B4B1",
+  //   },
+  // },
 ]);
 
 const styles = computed(() => {
