@@ -6,6 +6,22 @@ export default createStore({
   state: {
     workData: [
       {
+        id: 34,
+        exposure: 1,
+        category: "운영",
+        title: "삼성닷컴 갤럭시 캠퍼스 운영",
+        start_date: "2024.04.01",
+        end_date: "",
+        open_date: "",
+        summary: "삼성닷컴 갤럭시 캠퍼스 이벤트 페이지 운영",
+        link: "https://www.samsungebiz.com/event/galaxycampus/gcseventhub/",
+        description: [
+          "개발 환경: gulp, svn",
+          "디자인 시안: Adobe XD 이용",
+          "개발 언어 및 라이브러리: javascript, scss, html5, Swiper.js 외 다수",
+        ],
+      },
+      {
         id: 27,
         exposure: 1,
         category: "구축 | 쇼핑몰 | 이커머스",
