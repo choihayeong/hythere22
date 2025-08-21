@@ -1,6 +1,6 @@
 <template>
   <div id="wrap" class="wrap">
-    <the-header></the-header>
+    <!-- the-header></the-header -->
     <transition name="fade-transform">
       <router-view v-bind:key="key"></router-view>
     </transition>
